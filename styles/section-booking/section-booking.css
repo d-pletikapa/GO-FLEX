@@ -1,0 +1,23 @@
+.booking__form {
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 40px;
+}
+
+.booking ul {
+  list-style: none;
+  padding: 0;
+}
+
+.booking li {
+  display: inline-block;
+}
+
+.booking__title {
+  width: 100%;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}

@@ -1,0 +1,20 @@
+.general__title:first-line {
+  font-family: "Arial Black", sans-serif;
+  font-weight: 900;
+  font-size: 150px;
+  line-height: 150px;
+  text-align: center;
+  letter-spacing: -0.1em;
+  height: 150px;
+}
+
+.general__title span {
+  padding-left: 100px;
+  line-height: 50px;
+}
+
+.general__title {
+  width: 100%;
+  font-weight: 400;
+  font-size: 28px;
+}

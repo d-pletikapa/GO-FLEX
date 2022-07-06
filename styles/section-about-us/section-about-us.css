@@ -1,0 +1,76 @@
+.about-us__title {
+  width: 100%;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about-us__cover {
+  display: inline-block;
+  width: 600px;
+  height: 596px;
+  background-image: url("__img-about-us/about-us-cover.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.about-us__text {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+
+  width: 500px;
+}
+
+.about-us__subtitle {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.about-us__quote--text-style {
+  font-size: 44px;
+  line-height: 50px;
+  text-transform: uppercase;
+  white-space: pre-line;
+}
+
+.about-us__symbol, .about-us__quote--text-style:first-letter {
+  display: inline;
+  color: #6C0287;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+.about-us__quote:before {
+  display: inline;
+  position: relative;
+  left: 0;
+  content: '“ ';
+  color: #6C0287;
+}
+
+.about-us__author-sign {
+  padding-left: 111px;
+  margin-right: 0;
+  height: 84px;
+}
+
+.about-us__author-sign img {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  margin-right: 20px;
+}
+
+.about-us__author-sign figcaption {
+  display: inline-block;
+  width: 234px;
+  height: 80px;
+  font-size: 20px;
+  line-height: 32px;
+}
