@@ -1,7 +1,9 @@
 @import url('normalize.css');
 @import url('global-style.css');
-@import url(container/container.css);
+@import url('header/header.css');
+@import url('container/container.css');
 @import url('section-general/section-general.css');
+@import url('section-devices/section-devices.css');
 @import url('section-halls/section-halls.css');
 @import url('section-faq/section-faq.css');
 @import url('section-booking/section-booking.css');

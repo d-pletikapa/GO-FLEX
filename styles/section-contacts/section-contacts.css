@@ -14,6 +14,7 @@
   width: 680px;
   height: 274px;
   background-color: white;
+  background-image: url("./__img-contacts/map.jpg");
 }
 
 .contacts__title {
@@ -26,25 +27,25 @@
   text-transform: uppercase;
 }
 
-.contacts p {
+.contacts__wrapper p {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
 }
 
-.contacts p > a {
+.contacts__wrapper p > a {
   text-decoration: none;
   color: #FFFFFF;
 }
 
-.contacts p:nth-child(1) {
+.contacts__wrapper p:nth-child(1) {
   position: relative;
   margin-bottom: 39px;
   left: 66px;
   white-space: pre-line;
 }
 
-.contacts p:nth-child(1):before {
+.contacts__wrapper p:nth-child(1):before {
   content: url("__img-contacts/footer_location.svg");
   display: block;
   position: absolute;
@@ -54,13 +55,13 @@
   top: 14px;
 }
 
-.contacts p:nth-child(2) {
+.contacts__wrapper p:nth-child(2) {
   position: relative;
   margin-bottom: 11px;
   left: 66px;
 }
 
-.contacts p:nth-child(2):before {
+.contacts__wrapper p:nth-child(2):before {
   content: url("__img-contacts/footer_bx_bxs-phone-call.svg");
   display: block;
   position: absolute;
@@ -70,14 +71,14 @@
   top: -2px;
 }
 
-.contacts p:nth-child(3) {
+.contacts__wrapper p:nth-child(3) {
   position: relative;
   left: 66px;
   margin-bottom: 35px;
 }
 
 
-.contacts p:nth-child(3):before {
+.contacts__wrapper p:nth-child(3):before {
   content: url("__img-contacts/footer_mail.svg");
   display: block;
   position: absolute;
@@ -130,6 +131,17 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.contacts__credentials {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.contacts__credentials p:last-of-type {
+  white-space: pre;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 

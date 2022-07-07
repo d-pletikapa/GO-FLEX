@@ -1,0 +1,58 @@
+.devices .container {
+    flex-flow: column wrap;
+    row-gap: 41px;;
+    }
+    
+    .devices__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: pre;
+    }
+    .devices__wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 40px 20px;
+    }
+    
+    .devices__flex-block {
+        position: relative;
+        /* display: flex; */
+        /* justify-content: flex-start; */
+        /* align-items: flex-end; */
+        /* flex-basis: auto; */
+        min-width: 380px;
+        height: 228px;
+    }
+
+    .devices__text {
+        position: absolute;
+        top: 166px;
+        left: 40px;
+        padding-left: 40px;
+        white-space: pre;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+    }
+    
+    .devices__flex-block--vr {
+    background-image: url("__img-devices/vr-ochki.jpg");
+    } 
+    .devices__flex-block--au5-1 {
+    background-image: url("__img-devices/au5-1.jpg");
+    }
+    .devices__flex-block--karaoke {
+    background-image: url("__img-devices/karaoke.jpg");
+    }
+    .devices__flex-block--desktop {
+    background-image: url("__img-devices/desktop-games.jpg");
+    }
+    .devices__flex-block--cinema {
+    background-image: url("__img-devices/cinema.jpg");
+    }
+    .devices__flex-block--ps5 {
+    background-image: url("__img-devices/ps5.jpg");
+    }

@@ -42,16 +42,5 @@
 }
 
 
-.container__wrapper {
-  position: relative;
-  height: 823px;
-}
 
-.container__wrapper--overlay-img:before {
-  position: absolute;
-  content: url("__img-container/main-banner-vr-big.png");
-  right: 0;
-  bottom: 0;
-  height: 762px;
-}
 
