@@ -34,6 +34,17 @@
   height: 762px;
 }
 
+.general__wrapper--overlay-img:after {
+  position: absolute;
+  content: url("__img-general/down.svg");
+  right: 544px;
+  bottom: 90px;
+  height: 97px;
+  cursor: pointer;
+}
+
+
+
 .general__order-btn {
   width: 374px;
   height: 80px;
@@ -107,4 +118,5 @@ width: 166px;
   text-align: center;
   color: #FFFFFF;
 }
+
 

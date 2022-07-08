@@ -70,6 +70,16 @@ fieldset {
   margin: 0;
 }
 
+fieldset {
+  padding-block-start: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  padding-block-end: 0;
+  min-inline-size: 0;
+  border-width: 0;
+  border-style: none;
+}
+
 iframe {
   border: none;
 }

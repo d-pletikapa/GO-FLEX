@@ -16,31 +16,34 @@
   <a class="header__logo" href="#" title="Logo"></a>
   <nav class="header__navigation">
  <ul class="header__list">
-  <li class="header__item"><a href="#">залы</a></li> 
+  <li class="header__item"><a href="#">залы</a></li>
   <li class="header__item"><a href="#">О нас</a></li>
   <li class="header__item"><a href="#">Бронь</a></li>
   <li class="header__item"><a href="#">отзывы</a></li>
   <li class="header__item"><a href="#">Контакты</a></li>
  </ul>
   </nav>
-  <button class="header__call-back-order">Заказать звонок</button>
+  <button name="call-back-order" type="button" value="call-back-order" class="header__call-back-order">Заказать звонок</button>
+  </div>
 </header>
-</div>
 
 <main>
 
   <section class="general">
     <div class="container">
-      <div class="general__wrapper general__wrapper--overlay-img">
 
+      <div class="general__wrapper general__wrapper--overlay-img">
         <h1 class="general__title">GAME OVER
           <span>Новый формат игр и отдыха</span>
         </h1>
         <div class="general__features">
           <div class="general__first-block"><span class="first-block__text--special">4</span><span class="first-block__text">Тематических
-            зала</span></div>
+            зала</span>
+          </div>
+
           <div class="general__second-block"><span class="second-block__text--special">new</span><span class="second-block__text">Новейшая
-            аппаратура</span></div> 
+            аппаратура</span>
+          </div>
         </div>
         <button class="general__order-btn">Забронировать</button>
       </div>
@@ -49,7 +52,7 @@
 
   <section class="devices">
     <div class="container">
-      <h2 class="devices__title">У нас есть все для классного 
+      <h2 class="devices__title">У нас есть все для классного
         отдыха с друзьями!</h2>
         <div class="devices__wrapper">
         <div class="devices__flex-block devices__flex-block--vr"><p class="devices__text">VR очки</p></div>
@@ -57,7 +60,7 @@
 с отличным звуком</p></div>
         <div class="devices__flex-block devices__flex-block--karaoke"><p class="devices__text">Караоке (4 микрофона)</p></div>
         <div class="devices__flex-block devices__flex-block--desktop"><p class="devices__text">Настольные игры</p></div>
-        <div class="devices__flex-block devices__flex-block--cinema"><p class="devices__text">Кино сервисы Netflix, IVI, 
+        <div class="devices__flex-block devices__flex-block--cinema"><p class="devices__text">Кино сервисы Netflix, IVI,
 MegoGo, КиноПоиск, Okko</p></div>
         <div class="devices__flex-block devices__flex-block--ps5"><p class="devices__text">РlаyStаtiоn 5</p></div>
       </div>
@@ -91,148 +94,149 @@ MegoGo, КиноПоиск, Okko</p></div>
     <div class="container">
       <form class="booking__form" action="https://jsonplaceholder.typicode.com/posts" method="post" id="book">
 
-        <h2 class="booking__title">Забронировать</h2>
+        <h2 class="booking__title">Забронировать зал просто</h2>
 
-        <fieldset>
+        <fieldset class="booking__hall-set">
           <legend>Выбери зал</legend>
-          <label>
-            <input type="radio" value="80`s vibes" name="hall"> 80`s vibe
+          <label class="booking__hall-type">
+            <input class="visually-hidden" type="radio" value="80`s vibes" name="hall">80`s vibe
           </label>
-          <label>
-            <input type="radio" value="star wars" name="hall">star wars
+          <label class="booking__hall-type">
+            <input class="visually-hidden" type="radio" value="star wars" name="hall">star wars
           </label>
-          <label>
-            <input type="radio" value="wild west" name="hall">wild west
+          <label class="booking__hall-type">
+            <input class="visually-hidden" type="radio" value="wild west" name="hall">wild west
           </label>
-          <label>
-            <input type="radio" value="neon style" name="hall">neon style
+          <label class="booking__hall-type">
+            <input class="visually-hidden" type="radio" value="neon style" name="hall">neon style
           </label>
         </fieldset>
-        <fieldset>
+
+        <fieldset class="booking__device-set">
           <legend>
             Собери набор развлечений
           </legend>
-          <fieldset>
+          <fieldset class="booking__set-one">
             <legend>
               Приставка:
             </legend>
-            <ul>
+            <ul class="booking__device-list">
               <li><label>
-                <input type="radio" name="choice-of-playstation" value="PlayStation">PlayStation
+                <input type="radio" name="choice-of-playstation" value="PlayStation"><span>PlayStation</span>
               </label></li>
               <li><label>
-                <input type="radio" name="choice-of-playstation" value="Sega Mega Drive">Sega Mega Drive
+                <input type="radio" name="choice-of-playstation" value="Sega Mega Drive"><span>Sega Mega Drive</span>
               </label></li>
               <li><label>
-                <input type="radio" name="choice-of-playstation" value="X-box One S">X-box One S
+                <input type="radio" name="choice-of-playstation" value="X-box One S"><span>X-box One S</span>
               </label></li>
               <li><label>
-                <input type="radio" name="choice-of-playstation" value="Dendy">Dendy
+                <input type="radio" name="choice-of-playstation" value="Dendy"><span>Dendy</span>
               </label></li>
             </ul>
 
           </fieldset>
-          <fieldset>
+          <fieldset class="booking__set-two">
             <legend>
               Настольные игры:
             </legend>
-            <ul>
+            <ul class="booking__device-list">
               <li><label>
-                <input type="checkbox" name="board-games" value="Jenga">Jenga
+                <input type="checkbox" name="board-games" value="Jenga"><span>Jenga</span>
               </label></li>
               <li><label>
-                <input type="checkbox" name="board-games" value="Monopoly">Monopoly
+                <input type="checkbox" name="board-games" value="Monopoly"><span>Monopoly</span>
               </label></li>
               <li><label>
-                <input type="checkbox" name="board-games" value="">Манчкин
+                <input type="checkbox" name="board-games" value=""><span>Манчкин</span>
               </label></li>
               <li><label>
-                <input type="checkbox" name="board-games" value="">Alias
+                <input type="checkbox" name="board-games" value=""><span>Alias</span>
               </label></li>
             </ul>
           </fieldset>
 
-          <fieldset>
+          <fieldset class="booking__set-three">
             <legend>
               Дополнительно:
             </legend>
-            <ul>
+            <ul class="booking__device-list">
               <li>
                 <label>
-                  <input type="checkbox" name="additions-1" value="Karaoke">Караоке
+                  <input type="checkbox" name="additions-1" value="Karaoke"><span>Караоке</span>
                 </label>
               </li>
               <li>
                 <label>
-                  <input type="checkbox" name="additions-2" value="VR">VR
+                  <input type="checkbox" name="additions-2" value="VR"><span>VR</span>
                 </label>
               </li>
             </ul>
           </fieldset>
 
         </fieldset>
-        <fieldset>
+        <fieldset class="booking__personal-data">
           <legend>
             Выбери дату и время
           </legend>
-          <div>
-            <ul>
-              <li><label>
-                Дата* <input type="datetime-local" name="date" required="required">
+
+            <ul class="booking__date-time">
+              <li><label class="date-time__date">
+                <input type="number" name="date" required="required" placeholder="Дата">
               </label>
-                <label>
-                  Время* <input type="time" name="time" required="required">
+              </li>
+              <li>
+                <label class="date-time__time">
+                  <input type="number" name="time" required="required" placeholder="Время">
                 </label>
               </li>
               <li>
-                <label>
-                  Количество человек* <input type="number" name="person-quantity" required="required">
+                <label class="date-time__quantity">
+                  <input type="number" name="person-quantity" required="required" placeholder="Сколько человек">
                 </label>
               </li>
             </ul>
-          </div>
 
-          <div>
-            <ul>
-              <li><label>
-                Имя* <input type="text" name="name" required="required">
+
+
+            <ul class="booking__name">
+              <li><label><span>Имя</span><input type="text" name="name" required="required">
               </label></li>
-              <li><label>
-                Фамилия* <input type="text" name="surname" required="required">
+              <li><label><span>Фамилия</span><input type="text" name="surname" required="required">
               </label></li>
             </ul>
-          </div>
 
-          <div>
-            <ul>
-              <li><label>
 
-                Номер телефона* <input type="tel" name="telephone" required="required">
-              </label></li>
-              <li><label>
-
-                E-mail* <input type="email" name="mail" required="required">
-              </label></li>
+            <ul class="booking__tel">
+              <li>
+                <label><span>Телефон</span><input type="tel" name="telephone" required="required">
+              </label>
+              </li>
+              <li>
+                <label><span>E-mail</span><input type="email" name="mail" required="required" placeholder="">
+              </label>
+              </li>
             </ul>
-          </div>
 
-          <div>
-            <label>
-              <input type="checkbox" name="is-older18" required="required">Я старше 18 лет
-            </label>
-          </div>
-
+<!--           <div> -->
+<!--             <label> -->
+<!--               <input type="checkbox" name="is-older18" required="required">Я старше 18 лет -->
+<!--             </label> -->
+<!--           </div> -->
         </fieldset>
+        <fieldset>
+        <div class="booking__btn-wrapper">
+        <button class="booking__btn" form="book">Забронировать
+        </button></div>
+        </fieldset>
+<!--         <div> -->
+<!--           <label> -->
+<!--             <input type="checkbox" name="personal-data-agreement" id="personal-data-agreement" form="book" required>Согласен -->
+<!--             на обработку -->
+<!--             персональных данных -->
+<!--           </label> -->
+<!--         </div> -->
 
-        <div>
-          <label>
-            <input type="checkbox" name="personal-data-agreement" id="personal-data-agreement" form="book" required>Согласен
-            на обработку
-            персональных данных
-          </label>
-        </div>
-        <button type="submit" form="book">Забронировать
-        </button>
       </form>
     </div>
   </section>

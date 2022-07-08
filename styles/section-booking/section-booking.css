@@ -1,7 +1,7 @@
 .booking__form {
   display: flex;
   flex-flow: column wrap;
-  row-gap: 40px;
+  justify-content: space-between;
 }
 
 .booking ul {
@@ -9,9 +9,6 @@
   padding: 0;
 }
 
-.booking li {
-  display: inline-block;
-}
 
 .booking__title {
   width: 100%;
@@ -20,4 +17,178 @@
   line-height: 50px;
   text-align: center;
   text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+}
+
+.booking {
+  background-color: #440F51;
+  padding-bottom: 80px;
+}
+
+.booking__form button {
+  width: 300px;
+  height: 60px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #6C0287;
+}
+
+.booking__form legend{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+}
+
+
+.booking__hall-type {
+  display: flex;
+  width: 250px;
+  height: 55px;
+  border-radius: 8px;
+  background: #FFFFFF;
+  justify-content: space-around;
+  align-items: center;
+  color: #000000;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+.booking__hall-set {
+  display: flex;
+  width: 1180px;
+  flex-flow: row wrap;
+  column-gap: 60px;
+  margin-bottom: 60px;
+}
+
+.booking__device-set fieldset legend {
+  text-align: left;
+  margin-bottom: 23px;
+}
+
+.booking__device-set {
+  display: flex;
+  width: 1180px;
+  flex-flow: row wrap;
+  column-gap: 100px;
+  justify-content: space-between;
+  margin-bottom: 67px;
+}
+
+.booking__set-one {
+  width: 280px;
+}
+.booking__set-two {
+  width: 300px;
+}
+.booking__set-three {
+  width: 300px;
+}
+
+.booking__set-one input[type="radio"]{
+  width: 27px;
+  height: 27px;
+}
+.booking__set-two input[type="checkbox"], .booking__set-three input[type="checkbox"] {
+  width: 25px;
+  height: 25px;
+}
+
+
+.booking__device-list{
+  font-size: 22px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+.booking__device-list li {
+  margin-bottom: 20px;
+}
+
+.booking__device-list li span{
+  padding-left: 12px;
+}
+
+.booking__personal-data {
+  display: flex;
+  width: 980px;
+  flex-flow: row wrap;
+  column-gap: 50px;
+  margin: auto auto 40px auto;
+  justify-content: space-between;
+}
+.booking__personal-data label span{
+  display: block;
+}
+
+.booking__personal-data input {
+  height: 52px;
+}
+
+
+.booking__date-time{
+  display: flex;
+  flex-flow: row wrap;
+  row-gap: 36px;
+  column-gap: 32px;
+  width: 300px;
+  align-content: flex-end;
+}
+
+.date-time__date input{
+  width: 134px;
+}
+.date-time__time input{
+  width: 134px;
+}
+
+.date-time__quantity input{
+  width: 300px;
+}
+
+.booking__name{
+  display: flex;
+  flex-flow: column wrap;
+  width: 280px;
+  row-gap: 14px;
+}
+
+.booking__name  input{
+  width: 280px;
+}
+
+.booking__name span {
+  margin-bottom: 6px;
+}
+
+.booking__tel{
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 14px;
+  width: 300px;
+}
+
+.booking__tel input{
+  width: 300px;
+}
+
+.booking__tel span {
+  margin-bottom: 6px;
+}
+
+.booking__btn-wrapper {
+  display: flex;
+  max-width: 980px;
+  margin: auto;
+  justify-content: flex-end;
 }

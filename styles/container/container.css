@@ -20,10 +20,10 @@
   row-gap: 60px;
 }
 
-.booking .container {
-  padding-left: 150px;
-  padding-right: 150px;
-}
+/*.booking .container {*/
+/*  padding-left: 150px;*/
+/*  padding-right: 150px;*/
+/*}*/
 
 .reviews .container {
   flex-flow: row wrap;
