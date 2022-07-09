@@ -25,6 +25,11 @@
   /*margin-bottom: 54px;*/
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.contacts__wrapper {
+  margin-bottom: 40px;
 }
 
 .contacts__wrapper p {
@@ -139,7 +144,10 @@
   justify-content: space-between;
 }
 .contacts__credentials p:last-of-type {
-  white-space: pre;
+  /*white-space: pre;*/
+  text-align: right;
+  width: 157px;
+  display: block;
   font-size: 14px;
   line-height: 16px;
 }

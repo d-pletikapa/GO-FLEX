@@ -8,21 +8,24 @@
   height: 150px;
 }
 
-.general__title span {
+.general__wrapper p {
   padding-left: 100px;
   line-height: 50px;
+  font-weight: 400;
+  font-size: 28px;
+  margin-bottom: 65px;
 }
 
 .general__title {
   width: 100%;
   font-weight: 400;
   font-size: 28px;
-  margin-bottom: 30px;
 }
 
 .general__wrapper {
   /* display: flex; */
   position: relative;
+  width: 1180px;
   height: 823px;
 }
 
@@ -34,16 +37,13 @@
   height: 762px;
 }
 
-.general__wrapper--overlay-img:after {
+.general__arrow-down {
   position: absolute;
-  content: url("__img-general/down.svg");
   right: 544px;
   bottom: 90px;
   height: 97px;
-  cursor: pointer;
+  width: 97px;
 }
-
-
 
 .general__order-btn {
   width: 374px;

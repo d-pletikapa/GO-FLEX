@@ -5,39 +5,20 @@
 
 .container {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row wrap;
   margin: auto;
 }
 
 .about-us .container {
-  flex-flow: row wrap;
   column-gap: 80px;
-  row-gap: 50px;
-}
-
-.halls .container {
-  flex-flow: row wrap;
-  row-gap: 60px;
-}
-
-/*.booking .container {*/
-/*  padding-left: 150px;*/
-/*  padding-right: 150px;*/
-/*}*/
-
-.reviews .container {
-  flex-flow: row wrap;
-  row-gap: 40px;
 }
 
 .faq .container {
   flex-flow: column wrap;
-  row-gap: 40px;
 }
 
 .contacts .container {
   flex-flow: column wrap;
-  row-gap: 40px;
   justify-content: space-between;
 }
 
