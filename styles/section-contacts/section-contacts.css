@@ -155,4 +155,12 @@
   line-height: 16px;
 }
 
+.contacts__subtitle a:hover {
+  color:#CD06FF
+}
+
+.contacts__credentials a:hover {
+  color:#CD06FF
+}
+
 

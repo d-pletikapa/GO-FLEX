@@ -58,3 +58,7 @@ text-transform: uppercase;
   border: none;
   outline: none;
 }
+
+.header__item a:hover {
+  color:#CD06FF
+}
