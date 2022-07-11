@@ -38,12 +38,26 @@
 }
 
 .general__arrow-down {
+  background-image: url("__img-general/down.svg");
   position: absolute;
   right: 544px;
   bottom: 90px;
   height: 97px;
   width: 97px;
 }
+
+.general__arrow-down:hover {
+  background-image: url("__img-general/down-hover.svg");
+}
+
+.general__arrow-down:active {
+  background-image: url("__img-general/down-focus.svg");
+}
+
+.general__arrow-down:focus {
+  outline: 1px solid #CD06FF;
+}
+
 
 .general__order-btn {
   width: 374px;
@@ -56,6 +70,17 @@
   text-transform: uppercase;
   color: #FFFFFF;
 }
+
+.general__order-btn:hover, .general__order-btn:focus {
+  background-color: #840AA3;
+}
+
+.general__order-btn:active {
+  background-color: #640AA3;
+}
+
+
+
 
 .general__features {
   height: 174px;
@@ -81,7 +106,6 @@ flex-flow: column wrap;
 align-self: flex-end;
 align-items: center;
 width: 166px;
-
 }
 
 .first-block__text--special {

@@ -50,9 +50,27 @@
   height: 46px;
   right: 90px;
   top: 19px;
-
 }
+
+.faq__item:hover:after {
+  content: url('__img-faq/list_dark-blue-open-hover.svg');
+}
+
+.faq__item:active:after {
+  content: url('__img-faq/list_dark-blue-open-active.svg');
+}
+
+
 
 .faq__item:nth-child(odd) + :after {
   content: url('__img-faq/list_white-open.svg');
 }
+
+.faq__item:nth-child(odd) + :hover:after {
+  content: url('__img-faq/list_white-open-hover.svg');
+}
+
+.faq__item:nth-child(odd) + :active:after {
+  content: url('__img-faq/list_white-open-active.svg');
+}
+

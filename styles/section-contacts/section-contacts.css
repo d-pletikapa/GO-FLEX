@@ -115,28 +115,31 @@
   cursor: pointer;
 }
 
-/*.inst-icon {*/
-/*  background-image: url("__img-halls/entypo-social_instagram-with-circle.svg");*/
-/*}*/
-
-/*.vk-icon {*/
-/*  background-image: url("__img-halls/entypo-social_vk-with-circle.svg");*/
-/*}*/
-
-/*.fb-icon {*/
-/*  background-image: url("__img-halls/entypo-social_fb-with-circle.svg");*/
-/*}*/
-
-/*.tg-icon {*/
-/*  background-image: url("__img-halls/entypo-social_tg-with-circle.svg");*/
-/*}*/
-
 .contacts__inst-icon, .contacts__vk-icon, .contacts__fb-icon, .contacts__tg-icon {
   color: #FFFFFF;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.contacts__inst-icon:hover, .contacts__vk-icon:hover, .contacts__fb-icon:hover, .contacts__tg-icon:hover
+{
+  color: #EADEED;
+  outline: none;
+}
+
+.contacts__inst-icon svg:active, .contacts__vk-icon svg:active, .contacts__fb-icon svg:active, .contacts__tg-icon svg:active
+{
+  color: #CD06FF;
+  outline: none;
+}
+
+.contacts__inst-icon:focus, .contacts__vk-icon:focus, .contacts__fb-icon:focus, .contacts__tg-icon:focus
+{
+  color: #EADEED;
+  outline: 1px solid #CD06FF;
+}
+
 
 .contacts__credentials {
   display: flex;

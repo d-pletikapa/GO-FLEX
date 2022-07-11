@@ -61,6 +61,7 @@
   font-size: 30px;
   line-height: 40px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .booking__hall-set {
@@ -118,6 +119,9 @@
 .booking__device-list li span{
   padding-left: 12px;
 }
+
+
+
 
 .booking__personal-data {
   display: flex;
@@ -191,4 +195,50 @@
   max-width: 980px;
   margin: auto;
   justify-content: flex-end;
+}
+
+.booking__btn:hover {
+  background-color: #EADEED;
+  border: 3px solid #6C0287;
+  border-radius: 10px;
+}
+
+.booking__btn:active {
+  background-color: #EADEED;
+  border-radius: 10px;
+}
+
+.booking__btn:focus {
+  border: 3px solid #6C0287;
+  border-radius: 10px;
+}
+
+
+
+.booking__hall-type:hover {
+  background-color: #EADEED;
+  border: 3px solid #640AA3;
+  border-radius: 8px;
+}
+
+
+.booking__hall-type:active {
+  background-color: #6C0287;
+  border: 3px solid #FFFFFF;
+  border-radius: 8px;
+  color: #FFFFFF;
+}
+
+.booking__hall-type:focus {
+  border: 3px solid #640AA3;
+  border-radius: 8px;
+}
+
+.booking__personal-data input:focus{
+  border: 2px solid #CD06FF;
+  outline: none;
+}
+
+.booking__device-set input:focus {
+  outline: 1px solid #CD06FF;
 }

@@ -40,3 +40,21 @@ text-transform: uppercase;
     text-transform: uppercase;
     color: #FFFFFF;
 }
+
+.header__call-back-order:hover {
+  background-color: #6C0287;
+  border: 3px solid #6C0287;
+}
+
+.header__call-back-order:active {
+  background-color: #640AA3;
+  border: none;
+  outline: none;
+}
+
+
+.header__call-back-order:focus {
+  background-color: #6C0287;
+  border: none;
+  outline: none;
+}
