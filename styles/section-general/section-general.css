@@ -44,6 +44,8 @@
   bottom: 90px;
   height: 97px;
   width: 97px;
+  outline: transparent;
+  transition: background 0.2s ease, outline 0.2s ease-in-out;
 }
 
 .general__arrow-down:hover {
@@ -69,6 +71,7 @@
   line-height: 30px;
   text-transform: uppercase;
   color: #FFFFFF;
+  transition: background-color 0.2s ease;
 }
 
 .general__order-btn:hover, .general__order-btn:focus {

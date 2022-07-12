@@ -45,32 +45,48 @@
 .faq__item:after {
   position: absolute;
   display: block;
-  content: url('__img-faq/list_dark-blue-open.svg');
   width: 46px;
   height: 46px;
   right: 90px;
   top: 19px;
 }
 
-.faq__item:hover:after {
+@keyframes  faq-accordion {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.faq__item:nth-child(2n+1):after {
+  content: url('__img-faq/list_dark-blue-open.svg');
+}
+
+.faq__item:nth-child(2n+1):hover:after {
   content: url('__img-faq/list_dark-blue-open-hover.svg');
+  animation: faq-accordion 1.2s ease-out 1;
 }
 
-.faq__item:active:after {
+.faq__item:nth-child(2n+1):active:after {
   content: url('__img-faq/list_dark-blue-open-active.svg');
+  animation: faq-accordion 1.2s ease-in 1;
 }
 
 
-
-.faq__item:nth-child(odd) + :after {
+.faq__item:nth-child(2n):after {
   content: url('__img-faq/list_white-open.svg');
+
 }
 
-.faq__item:nth-child(odd) + :hover:after {
+.faq__item:nth-child(2n):hover:after {
   content: url('__img-faq/list_white-open-hover.svg');
+  animation: faq-accordion 1.2s ease-out 1;
 }
 
-.faq__item:nth-child(odd) + :active:after {
+.faq__item:nth-child(2n):active:after {
   content: url('__img-faq/list_white-open-active.svg');
+  animation: faq-accordion 1.2s ease-in 1;
 }
 

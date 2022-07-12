@@ -21,12 +21,13 @@
 
 .devices__flex-block {
   position: relative;
-  /* display: flex; */
-  /* justify-content: flex-start; */
-  /* align-items: flex-end; */
-  /* flex-basis: auto; */
   min-width: 380px;
   height: 228px;
+  transition: transform 0.4s ease-in-out;
+}
+
+.devices__flex-block:hover {
+  transform: scale(1.1);
 }
 
 .devices__text {
@@ -63,3 +64,6 @@
 .devices__flex-block--ps5 {
   background-image: url("__img-devices/ps5.jpg");
 }
+
+
+

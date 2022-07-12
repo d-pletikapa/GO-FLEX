@@ -14,6 +14,7 @@
     background-image: url('__img-header/logo.svg');
     background-position: center;
     background-repeat: no-repeat;
+    outline: transparent;
 }
 
 .header__list {
@@ -41,6 +42,22 @@ text-transform: uppercase;
     color: #FFFFFF;
 }
 
+.header__call-back-order {
+  transition: background-color 0.2s ease, border 0.2s ease-out;
+}
+
+.header__item a {
+  transition: color 0.2s ease-in;
+}
+
+.header__logo, .header__item a {
+  transition:  outline 0.2s ease-in-out;
+}
+
+.header__logo:focus {
+  outline: 1px solid #CD06FF;
+}
+
 .header__call-back-order:hover {
   background-color: #6C0287;
   border: 3px solid #6C0287;
@@ -61,4 +78,9 @@ text-transform: uppercase;
 
 .header__item a:hover {
   color:#CD06FF
+}
+
+.header__item a:focus {
+  outline: 2px solid #CD06FF;
+  border-radius: 5px;
 }

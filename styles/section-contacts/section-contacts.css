@@ -113,13 +113,11 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   cursor: pointer;
+  transition: color 0.2s ease-in;
 }
 
-.contacts__inst-icon, .contacts__vk-icon, .contacts__fb-icon, .contacts__tg-icon {
-  color: #FFFFFF;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+.contacts__inst-icon svg, .contacts__vk-icon svg, .contacts__fb-icon svg, .contacts__tg-icon svg {
+  transition: color 0.2s ease, outline 0.2s ease-in-out;
 }
 
 .contacts__inst-icon:hover, .contacts__vk-icon:hover, .contacts__fb-icon:hover, .contacts__tg-icon:hover
@@ -139,7 +137,6 @@
   color: #EADEED;
   outline: 1px solid #CD06FF;
 }
-
 
 .contacts__credentials {
   display: flex;
@@ -161,6 +158,17 @@
 
 .contacts__credentials a:hover {
   color:#CD06FF
+}
+
+.contacts__subtitle a,
+.contacts__credentials a{
+  outline: transparent;
+}
+
+.contacts__subtitle a:focus,
+.contacts__credentials a:focus {
+  outline: 2px #CD06FF solid;
+  border-radius: 5px;
 }
 
 

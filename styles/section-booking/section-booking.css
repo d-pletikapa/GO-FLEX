@@ -62,6 +62,7 @@
   line-height: 40px;
   text-transform: uppercase;
   cursor: pointer;
+  border: 3px solid transparent;
 }
 
 .booking__hall-set {
@@ -197,41 +198,41 @@
   justify-content: flex-end;
 }
 
+.booking__btn {
+  transition: background-color 0.2s ease, border 0.2s ease-out;
+}
+
 .booking__btn:hover {
   background-color: #EADEED;
   border: 3px solid #6C0287;
-  border-radius: 10px;
 }
 
 .booking__btn:active {
   background-color: #EADEED;
-  border-radius: 10px;
 }
 
 .booking__btn:focus {
   border: 3px solid #6C0287;
-  border-radius: 10px;
 }
 
-
+.booking__hall-type {
+  transition: background-color 0.2s ease, border 0.2s ease-out, color 0.2s ease-in;
+}
 
 .booking__hall-type:hover {
   background-color: #EADEED;
   border: 3px solid #640AA3;
-  border-radius: 8px;
 }
 
 
 .booking__hall-type:active {
   background-color: #6C0287;
   border: 3px solid #FFFFFF;
-  border-radius: 8px;
   color: #FFFFFF;
 }
 
-.booking__hall-type:focus {
-  border: 3px solid #640AA3;
-  border-radius: 8px;
+.booking__personal-data input {
+  transition: outline 0.2s ease-in-out, border 0.2s ease-in-out;
 }
 
 .booking__personal-data input:focus{
