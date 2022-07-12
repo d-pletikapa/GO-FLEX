@@ -100,18 +100,27 @@ MegoGo, КиноПоиск, Okko</p></div>
 
         <fieldset class="booking__hall-set">
           <legend>Выбери зал</legend>
-          <label class="booking__hall-type booking__hall-type--vibe">
-            <input class="visually-hidden" type="radio" value="80`s vibes" name="hall">80`s vibe
+
+          <input class="visually-hidden" id="booking__vibe" type="radio" value="80`s vibes" name="hall">
+          <label class="booking__hall-type booking__hall-vibe" for="booking__vibe">
+            80`s vibe
           </label>
-          <label class="booking__hall-type booking__hall-type--star">
-            <input class="visually-hidden" type="radio" value="star wars" name="hall">star wars
+
+          <input class="visually-hidden" id="booking__sw" type="radio" value="star wars" name="hall">
+          <label class="booking__hall-type booking__hall-sw" for="booking__sw">
+            star wars
           </label>
-          <label class="booking__hall-type booking__hall-type--ww">
-            <input class="visually-hidden" type="radio" value="wild west" name="hall">wild west
+
+          <input class="visually-hidden" id="booking__ww" type="radio" value="wild west" name="hall">
+          <label class="booking__hall-type booking__hall-ww" for="booking__ww">
+            wild west
           </label>
-          <label class="booking__hall-type booking__hall-type--ns">
-            <input class="visually-hidden" type="radio" value="neon style" name="hall">neon style
+
+          <input class="visually-hidden" id="booking__ns" type="radio" value="neon style" name="hall">
+          <label class="booking__hall-type booking__hall-ns" for="booking__ns">
+            neon style
           </label>
+
         </fieldset>
 
         <fieldset class="booking__device-set">

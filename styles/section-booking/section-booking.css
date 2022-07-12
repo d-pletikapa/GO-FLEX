@@ -231,6 +231,46 @@
   color: #FFFFFF;
 }
 
+#booking__vibe:checked + .booking__hall-vibe {
+  background: #6C0287;
+  color: #FFFFFF;
+  border: 3px solid #FFFFFF;
+}
+
+#booking__vibe:focus-visible + .booking__hall-vibe {
+  border: 3px solid #640AA3;
+}
+
+#booking__sw:checked + .booking__hall-sw {
+  background: #6C0287;
+  color: #FFFFFF;
+  border: 3px solid #FFFFFF;
+}
+
+#booking__sw:focus + .booking__hall-sw{
+  border: 3px solid #640AA3;
+}
+
+#booking__ww:checked + .booking__hall-ww {
+  background: #6C0287;
+  color: #FFFFFF;
+  border: 3px solid #FFFFFF;
+}
+
+#booking__ww:focus + .booking__hall-ww {
+  border: 3px solid #640AA3;
+}
+
+#booking__ns:checked + .booking__hall-ns {
+  background: #6C0287;
+  color: #FFFFFF;
+  border: 3px solid #FFFFFF;
+}
+
+#booking__ns:focus + .booking__hall-ns {
+  border: 3px solid #640AA3;
+}
+
 .booking__personal-data input {
   transition: outline 0.2s ease-in-out, border 0.2s ease-in-out;
 }
@@ -243,3 +283,5 @@
 .booking__device-set input:focus {
   outline: 1px solid #CD06FF;
 }
+
+
