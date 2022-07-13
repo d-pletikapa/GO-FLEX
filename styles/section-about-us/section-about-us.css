@@ -40,7 +40,7 @@
 
 .about-us__symbol, .about-us__quote--text-style:first-letter {
   display: inline;
-  color: #6C0287;
+  color: var(--с-purple-medium-txt);
   font-weight: 900;
   font-size: 44px;
   line-height: 50px;
@@ -52,7 +52,7 @@
   position: relative;
   left: 0;
   content: '“ ';
-  color: #6C0287;
+  color: var(--с-purple-medium-txt);
 }
 
 .about-us__author-sign {

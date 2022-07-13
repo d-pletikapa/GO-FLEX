@@ -1,0 +1,21 @@
+:root {
+  --c-white-bg: #FFFFFF;
+  --c-white-txt: #FFFFFF;
+  --c-white-border-outline: #FFFFFF;
+
+  --с-purple-medium-bg: #6C0287;
+  --с-purple-medium-txt: #6C0287;
+  --с-purple-medium-border-outline: #6C0287;
+
+  --с-purple-bright-txt: #CD06FF;
+  --с-purple-bright-a-hover: #CD06FF;
+  --с-purple-bright-border-outline: #CD06FF;
+
+  --с-purple-dark-bg: #440F51;
+
+  --с-brown-dark-bg: #1B1A1B;
+  --с-brown-dark-txt: #1C1A1A;
+
+  --с-main-black-bg: #050404;
+  --с-main-black-txt: #000000;
+}

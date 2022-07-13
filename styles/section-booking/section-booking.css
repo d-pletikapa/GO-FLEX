@@ -17,25 +17,25 @@
   line-height: 50px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: var(--c-white-txt);
   margin-bottom: 40px;
 }
 
 .booking {
-  background-color: #440F51;
+  background-color: var(--с-purple-dark-bg);
   padding-bottom: 80px;
 }
 
 .booking__form button {
   width: 300px;
   height: 60px;
-  background-color: #FFFFFF;
+  background-color: var(--c-white-bg);
   border-radius: 10px;
   font-weight: 700;
   font-size: 22px;
   line-height: 28px;
   text-transform: uppercase;
-  color: #6C0287;
+  color: var(--с-purple-medium-txt);
 }
 
 .booking__form legend{
@@ -43,7 +43,7 @@
   font-size: 24px;
   line-height: 28px;
   text-align: center;
-  color: #FFFFFF;
+  color: var(--c-white-txt);
   margin-bottom: 40px;
 }
 
@@ -53,10 +53,10 @@
   width: 250px;
   height: 55px;
   border-radius: 8px;
-  background: #FFFFFF;
+  background-color: var(--c-white-bg);;
   justify-content: space-around;
   align-items: center;
-  color: #000000;
+  color: var(--с-main-black-txt);
   font-weight: 700;
   font-size: 30px;
   line-height: 40px;
@@ -110,7 +110,7 @@
 .booking__device-list{
   font-size: 22px;
   line-height: 25px;
-  color: #FFFFFF;
+  color: var(--c-white-txt);
 }
 
 .booking__device-list li {
@@ -204,7 +204,7 @@
 
 .booking__btn:hover {
   background-color: #EADEED;
-  border: 3px solid #6C0287;
+  border: 3px solid var(--с-purple-medium-border-outline);;
 }
 
 .booking__btn:active {
@@ -212,7 +212,7 @@
 }
 
 .booking__btn:focus {
-  border: 3px solid #6C0287;
+  border: 3px solid var(--с-purple-medium-border-outline);;
 }
 
 .booking__hall-type {
@@ -226,15 +226,15 @@
 
 
 .booking__hall-type:active {
-  background-color: #6C0287;
-  border: 3px solid #FFFFFF;
-  color: #FFFFFF;
+  background-color: var(--с-purple-medium-bg);
+  border: 3px solid var(--c-white-border-outline);;
+  color: var(--c-white-txt);
 }
 
 #booking__vibe:checked + .booking__hall-vibe {
-  background: #6C0287;
-  color: #FFFFFF;
-  border: 3px solid #FFFFFF;
+  background: var(--с-purple-medium-bg);;
+  color: var(--c-white-txt);
+  border: 3px solid var(--c-white-border-outline);;
 }
 
 #booking__vibe:focus-visible + .booking__hall-vibe {
@@ -242,9 +242,9 @@
 }
 
 #booking__sw:checked + .booking__hall-sw {
-  background: #6C0287;
-  color: #FFFFFF;
-  border: 3px solid #FFFFFF;
+  background: var(--с-purple-medium-bg);;
+  color: var(--c-white-txt);
+  border: 3px solid var(--c-white-border-outline);;
 }
 
 #booking__sw:focus + .booking__hall-sw{
@@ -252,9 +252,9 @@
 }
 
 #booking__ww:checked + .booking__hall-ww {
-  background: #6C0287;
-  color: #FFFFFF;
-  border: 3px solid #FFFFFF;
+  background: var(--с-purple-medium-bg);;
+  color: var(--c-white-txt);
+  border: 3px solid var(--c-white-border-outline);;
 }
 
 #booking__ww:focus + .booking__hall-ww {
@@ -262,9 +262,9 @@
 }
 
 #booking__ns:checked + .booking__hall-ns {
-  background: #6C0287;
-  color: #FFFFFF;
-  border: 3px solid #FFFFFF;
+  background: var(--с-purple-medium-bg);;
+  color: var(--c-white-txt);
+  border: 3px solid var(--c-white-border-outline);;
 }
 
 #booking__ns:focus + .booking__hall-ns {
@@ -276,12 +276,12 @@
 }
 
 .booking__personal-data input:focus{
-  border: 2px solid #CD06FF;
+  border: 2px solid var(--с-purple-bright-border-outline);;
   outline: none;
 }
 
 .booking__device-set input:focus {
-  outline: 1px solid #CD06FF;
+  outline: 1px solid var(--с-purple-bright-border-outline);;
 }
 
 

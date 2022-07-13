@@ -53,7 +53,36 @@ git add index.html
 ### добавить все файлы из корня в трек
 
 ```shell
-git add .
+#1 - "git add -A"
+'git add -A'
+
+This command stages:
+
+All changes
+In all directories
+It is equivalent to git add --all.
+
+#2 - "git add ."
+'git add .'
+
+This command stages:
+
+All changes
+In the current directory and its subdirectories (if a file has been changed outside the directory where you run the git commands, it will not be staged)
+
+#3 - "git add -u"
+'git add -u'
+
+This command stages
+
+All modifications and deletions (but no new files)
+In all directories
+It is equivalent to git add --update.
+
+#4 - Stage All Files With A Specific Extension
+'git add -A *.txt'
+
+If you want to stage all files with a specific extension, for example .txt
 ```
 
 ### выполнить коммит (сделать слепок) текущего состояния проекта

@@ -1,6 +1,7 @@
 .contacts {
   padding-top: 19px;
   padding-bottom: 10px;
+  background-image: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
 }
 
 .contacts__wrapper {
@@ -13,7 +14,7 @@
 .contacts__map {
   width: 680px;
   height: 274px;
-  background-color: white;
+  background-color: var(--c-white-bg);
   background-image: url("./__img-contacts/map.jpg");
 }
 
@@ -40,7 +41,7 @@
 
 .contacts__wrapper p > a {
   text-decoration: none;
-  color: #FFFFFF;
+  color: var(--c-white-txt);
 }
 
 .contacts__wrapper p:nth-child(1) {
@@ -103,7 +104,6 @@
 }
 
 .contacts .contacts__socials-item a {
-  display: inline-block;
   width: 50px;
   height: 50px;
   margin-right: 26px;
@@ -128,14 +128,14 @@
 
 .contacts__inst-icon svg:active, .contacts__vk-icon svg:active, .contacts__fb-icon svg:active, .contacts__tg-icon svg:active
 {
-  color: #CD06FF;
+  color: var(--с-purple-bright-txt);
   outline: none;
 }
 
 .contacts__inst-icon:focus, .contacts__vk-icon:focus, .contacts__fb-icon:focus, .contacts__tg-icon:focus
 {
   color: #EADEED;
-  outline: 1px solid #CD06FF;
+  outline: 1px solid var(--с-purple-bright-border-outline);
 }
 
 .contacts__credentials {
@@ -153,11 +153,11 @@
 }
 
 .contacts__subtitle a:hover {
-  color:#CD06FF
+  color:var(--с-purple-bright-a-hover);
 }
 
 .contacts__credentials a:hover {
-  color:#CD06FF
+  color:var(--с-purple-bright-a-hover);
 }
 
 .contacts__subtitle a,
@@ -167,7 +167,7 @@
 
 .contacts__subtitle a:focus,
 .contacts__credentials a:focus {
-  outline: 2px #CD06FF solid;
+  outline: 2px var(--с-purple-bright-border-outline) solid;
   border-radius: 5px;
 }
 

@@ -14,9 +14,19 @@
 }
 
 .devices__wrapper {
+  height: calc(228px * 2 + 40px + 70px);
   display: flex;
   flex-flow: row wrap;
-  gap: 40px 20px;
+  column-gap: 20px;
+}
+
+.devices__col-1 .devices__flex-block:nth-child(2n+1):not(:last-child), .devices__col-3 .devices__flex-block:nth-child(2n+1):not(:last-child),
+.devices__col-2 .devices__flex-block:nth-child(2n+1):not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.devices__col-2 {
+  align-self: flex-end;
 }
 
 .devices__flex-block {

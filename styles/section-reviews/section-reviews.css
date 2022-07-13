@@ -34,11 +34,21 @@
   min-height: 319px;
   width: 280px;
   float: left;
+
 }
 
 .reviews__item img {
   width: 280px;
   height: 280px;
+}
+
+.reviews__item figure:before{
+  position: absolute;
+  content: "";
+  width: 280px;
+  height: 280px;
+  border-radius: 140px;
+  background-image: radial-gradient(50% 50% at 50% 50%, rgba(196, 196, 196, 0) 0%, rgba(108, 2, 135, 0.5) 100%);
 }
 
 .reviews__item figcaption {

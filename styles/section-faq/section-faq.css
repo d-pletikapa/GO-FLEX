@@ -12,12 +12,12 @@
   height: 87px;
   display: block;
   position: relative;
-  background-color: #fff;
+  background-color: var(--c-white-bg);
   font-style: normal;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
-  color: #1C1A1A;
+  color: var(--с-brown-dark-txt);
   list-style-type: none;
   padding: 30px 0 29px 70px;
 }
@@ -27,8 +27,8 @@
 /*}*/
 
 .faq__item:nth-child(even) {
-  background-color: #440F51;
-  color: #ffffff;
+  background-color: var(--с-purple-dark-bg);
+  color: var(--c-white-txt);
 }
 
 .faq .faq__list {
