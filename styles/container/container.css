@@ -1,6 +1,6 @@
 .container {
-  max-width: 1440px;
-  padding: 0 130px;
+  max-width: var(--container-max-width);
+  padding: var(--container-padding);
 }
 
 .container {
@@ -22,6 +22,65 @@
   justify-content: space-between;
 }
 
+.about-us .container {
+  display: grid;
+  column-gap: 80px;
+  row-gap: 35px;
+  justify-content: space-evenly;
+  grid-template-columns: 600px 500px;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas:
+    "about-us__title about-us__title"
+    "about-us__cover about-us__subtitle--1"
+    "about-us__cover about-us__subtitle--2"
+    "about-us__cover about-us__quote"
+    "about-us__cover about-us__author-sign";
+}
 
+@media (max-width:1439px) {
+  .about-us .container {
+    column-gap: 39px;
+    row-gap: 26px;
+    grid-template-columns: 420px 444px;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+    "about-us__title about-us__title"
+    "about-us__cover about-us__subtitle--1"
+    "about-us__cover about-us__subtitle--2"
+    "about-us__cover about-us__quote"
+    "about-us__cover about-us__author-sign";
+  }
+}
+
+@media (max-width:1023px) {
+  .about-us .container {
+    column-gap: 28px;
+    row-gap: 0;
+    grid-template-columns: 382px 278px;
+    grid-template-rows: auto 190px 190px auto auto;
+    grid-template-areas:
+    "about-us__title about-us__title"
+    "about-us__cover about-us__subtitle--1"
+    "about-us__cover about-us__subtitle--2"
+    "about-us__quote about-us__quote"
+    ". about-us__author-sign";
+  }
+}
+
+@media (max-width:767px) {
+  .about-us .container {
+    column-gap: 0;
+    row-gap: 0;
+    grid-template-columns: 280px;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:
+    "about-us__title"
+    "about-us__subtitle--1"
+    "about-us__subtitle--2"
+    "about-us__cover"
+    "about-us__quote"
+    "about-us__author-sign";
+  }
+}
 
 

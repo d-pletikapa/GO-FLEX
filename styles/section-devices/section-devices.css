@@ -3,6 +3,10 @@
   /*justify-content: center;*/
 }
 
+.devices__flex-block--mobile {
+  display: none;
+}
+
 .devices__title {
   font-weight: 700;
   font-size: 40px;
@@ -73,6 +77,123 @@
 
 .devices__flex-block--ps5 {
   background-image: url("__img-devices/ps5.jpg");
+}
+
+@media (max-width:1439px) {
+  .devices__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 36px;
+  }
+
+  .devices__wrapper {
+    height: calc(172px * 2 + 30px + 53px);
+    display: flex;
+    column-gap: 21px;
+  }
+
+  .devices__col-1 .devices__flex-block:nth-child(2n+1):not(:last-child), .devices__col-3 .devices__flex-block:nth-child(2n+1):not(:last-child),
+  .devices__col-2 .devices__flex-block:nth-child(2n+1):not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .devices__flex-block {
+    position: relative;
+    min-width: 287px;
+    height: 172px;
+  }
+
+  .devices__text {
+    top: 114px;
+    left: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+
+}
+
+@media (max-width:1023px) {
+  .devices__title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 30px;
+  }
+
+  .devices__flex-block--mobile {
+    display: block;
+  }
+
+  .devices__col-1 .devices__flex-block:nth-child(2n+1):not(:last-child), .devices__col-3 .devices__flex-block:nth-child(2n+1):not(:last-child),
+  .devices__col-2 .devices__flex-block:nth-child(2n+1):not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .devices__col-1,
+  .devices__col-2,
+  .devices__col-3 {
+    display: none;
+  }
+
+  .devices__wrapper {
+    height: 640px;
+    display: flex;
+    gap: 20px;
+  }
+
+  .devices__flex-block {
+    min-width: 334px;
+    height: 200px;
+  }
+  .devices__text {
+    position: absolute;
+    top: 132px;
+    left: 15px;
+    padding-left: 15px;
+    max-width: 274px;
+    white-space:pre-line;
+  }
+
+}
+
+@media (max-width:767px) {
+
+  .devices__title {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+
+  .devices__text {
+    top: 30px;
+    left: 5px;
+    padding-left: 5px;
+    max-width: 115px;
+    font-size: 10px;
+    line-height: 14px;
+    white-space: normal;
+  }
+  .devices__wrapper {
+    height: 245px;
+    display: flex;
+    gap: 10px;
+  }
+
+  .devices__flex-block {
+    min-width: 135px;
+    height: 75px;
+  }
+
+  .devices__flex-block--vr,
+  .devices__flex-block--au5-1,
+  .devices__flex-block--karaoke,
+  .devices__flex-block--desktop,
+  .devices__flex-block--cinema,
+  .devices__flex-block--ps5 {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 

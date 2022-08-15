@@ -3,8 +3,8 @@
 <head>
   <link type="image/svg+xml" rel="icon" href="img/logo.svg">
   <meta charset="UTF-8">
-  <!--   <meta name="viewport" -->
-  <!--         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> -->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="styles/style.css">
   <title>Модуль 1 Урок 1</title>
@@ -15,6 +15,7 @@
   <div class="container">
   <a class="header__logo" href="#" title="Logo"></a>
   <nav class="header__navigation">
+    <button name="header__menu-btn" type="button" value="header__menu-btn" class="header__menu-btn"></button>
  <ul class="header__list">
   <li class="header__item"><a href="#">залы</a></li>
   <li class="header__item"><a href="#">О нас</a></li>
@@ -23,7 +24,7 @@
   <li class="header__item"><a href="#">Контакты</a></li>
  </ul>
   </nav>
-  <button name="call-back-order" type="button" value="call-back-order" class="header__call-back-order">Заказать звонок</button>
+  <button class="header__call-back-order" name="header__call-back-order" type="button" value="header__call-back-order">Заказать звонок</button>
   </div>
 </header>
 
@@ -32,7 +33,7 @@
   <section class="general">
     <div class="container">
 
-      <div class="general__wrapper general__wrapper--overlay-img">
+      <div class="general__wrapper general__wrapper--overlay">
         <h1 class="general__title">GAME OVER
         </h1>
         <p>Новый формат игр и отдыха</p>
@@ -74,6 +75,17 @@
 MegoGo, КиноПоиск, Okko</p></div>
         <div class="devices__flex-block devices__flex-block--ps5"><p class="devices__text">РlаyStаtiоn 5</p></div>
           </div>
+
+            <div class="devices__flex-block devices__flex-block--vr devices__flex-block--mobile"><p class="devices__text">VR очки</p></div>
+            <div class="devices__flex-block devices__flex-block--au5-1 devices__flex-block--mobile"><p class="devices__text">Аудио-система 5.1
+              с отличным звуком</p></div>
+
+            <div class="devices__flex-block devices__flex-block--karaoke devices__flex-block--mobile"><p class="devices__text">Караоке (4 микрофона)</p></div>
+            <div class="devices__flex-block devices__flex-block--desktop devices__flex-block--mobile"><p class="devices__text">Настольные игры</p></div>
+
+            <div class="devices__flex-block devices__flex-block--cinema devices__flex-block--mobile"><p class="devices__text">Кино сервисы Netflix, IVI,
+              MegoGo, КиноПоиск, Okko</p></div>
+            <div class="devices__flex-block devices__flex-block--ps5 devices__flex-block--mobile"><p class="devices__text">РlаyStаtiоn 5</p></div>
 
       </div>
     </div>
@@ -196,6 +208,7 @@ MegoGo, КиноПоиск, Okko</p></div>
           </fieldset>
 
         </fieldset>
+
         <fieldset class="booking__personal-data">
           <legend>
             Выбери дату и время
@@ -206,38 +219,50 @@ MegoGo, КиноПоиск, Okko</p></div>
                 <input type="number" name="date" required="required" placeholder="Дата">
               </label>
               </li>
+
               <li>
                 <label class="date-time__time">
                   <input type="number" name="time" required="required" placeholder="Время">
                 </label>
               </li>
-              <li>
-                <label class="date-time__quantity">
-                  <input type="number" name="person-quantity" required="required" placeholder="Сколько человек">
-                </label>
-              </li>
             </ul>
 
+          <ul class="booking__name booking__name--name">
+            <li><label><span>Имя</span><input type="text" name="name" required="required">
+            </label></li>
+          </ul>
 
+          <ul class="booking__tel booking__tel--tel">
+            <li>
+              <label><span>Телефон</span><input type="tel" name="telephone" required="required">
+              </label>
+            </li>
+          </ul>
 
-            <ul class="booking__name">
-              <li><label><span>Имя</span><input type="text" name="name" required="required">
-              </label></li>
+          <ul class="booking__count-ppl">
+            <li>
+              <label class="date-time__quantity">
+                <input type="number" name="person-quantity" required="required" placeholder="Сколько человек">
+              </label>
+            </li>
+          </ul>
+
+            <ul class="booking__name booking__name--sir-name">
               <li><label><span>Фамилия</span><input type="text" name="surname" required="required">
               </label></li>
             </ul>
 
 
-            <ul class="booking__tel">
-              <li>
-                <label><span>Телефон</span><input type="tel" name="telephone" required="required">
-              </label>
-              </li>
+
+          <ul class="booking__tel booking__tel--e-mail">
               <li>
                 <label><span>E-mail</span><input type="email" name="mail" required="required" placeholder="">
               </label>
               </li>
             </ul>
+
+            <button class="booking__btn" form="book">Забронировать
+            </button>
 
 <!--           <div> -->
 <!--             <label> -->
@@ -245,11 +270,9 @@ MegoGo, КиноПоиск, Okko</p></div>
 <!--             </label> -->
 <!--           </div> -->
         </fieldset>
-        <fieldset>
-        <div class="booking__btn-wrapper">
-        <button class="booking__btn" form="book">Забронировать
-        </button></div>
-        </fieldset>
+<!--         <fieldset> -->
+<!--      -->
+<!--         </fieldset> -->
 <!--         <div> -->
 <!--           <label> -->
 <!--             <input type="checkbox" name="personal-data-agreement" id="personal-data-agreement" form="book" required>Согласен -->
@@ -266,18 +289,18 @@ MegoGo, КиноПоиск, Okko</p></div>
     <div class="container">
       <h2 class="about-us__title">О нас</h2>
       <div class="about-us__cover"></div>
-      <div class="about-us__text">
-        <p class="about-us__subtitle">Для наших гостей мы создали концептуально новое игровое пространство виртулаьно
+<!--       <div class="about-us__text"> -->
+        <p class="about-us__subtitle about-us__subtitle--1">Для наших гостей мы создали концептуально новое игровое пространство виртуальной
           реальности в центральной
           части
-          говрода.</p>
-        <p class="about-us__subtitle">Каждый день мы стараемся создавать для вас самую лучшую игровую атомсферу и
+          города.</p>
+        <p class="about-us__subtitle about-us__subtitle--2">Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и
           радовать
           Вас топовыми игровыми
           разработками со всего мира.</p>
 
         <blockquote class="about-us__quote about-us__quote--text-style">GAME OVER —
-          это место назыбываемых впечатлений<span class="about-us__symbol"> ”</span>
+          это место незабываемых впечатлений<span class="about-us__symbol"> ”</span>
         </blockquote>
 
 
@@ -290,7 +313,7 @@ MegoGo, КиноПоиск, Okko</p></div>
             территории GAME OVER
           </figcaption>
         </figure>
-      </div>
+<!--       </div> -->
     </div>
   </section>
 

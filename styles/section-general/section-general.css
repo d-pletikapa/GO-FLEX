@@ -5,7 +5,7 @@
   line-height: 150px;
   text-align: center;
   letter-spacing: -0.1em;
-  height: 150px;
+  height: 100%;
 }
 
 .general__wrapper p {
@@ -16,11 +16,6 @@
   margin-bottom: 65px;
 }
 
-.general__title {
-  width: 100%;
-  font-weight: 400;
-  font-size: 28px;
-}
 
 .general__wrapper {
   /* display: flex; */
@@ -29,7 +24,7 @@
   height: 823px;
 }
 
-.general__wrapper--overlay-img:before {
+.general__wrapper--overlay:before {
   position: absolute;
   content: url("__img-general/main-banner-vr-big.png");
   right: 0;
@@ -39,6 +34,7 @@
 
 .general__arrow-down {
   background-image: url("__img-general/down.svg");
+  background-size: contain;
   position: absolute;
   right: 544px;
   bottom: 90px;
@@ -57,14 +53,13 @@
 }
 
 .general__arrow-down:focus {
-  outline: 1px solid var(--purple-bright-border-outline);;
+  outline: 1px solid var(--с-purple-bright-border-outline);
 }
-
 
 .general__order-btn {
   width: 374px;
   height: 80px;
-  background: var(--с-purple-medium-bg);;
+  background: var(--с-purple-medium-bg);
   border-radius: 10px;
   font-weight: 700;
   font-size: 26px;
@@ -72,6 +67,8 @@
   text-transform: uppercase;
   color: var(--c-white-txt);
   transition: background-color 0.2s ease;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border: 2px transparent;
 }
 
 .general__order-btn:hover, .general__order-btn:focus {
@@ -81,9 +78,6 @@
 .general__order-btn:active {
   background-color: #640AA3;
 }
-
-
-
 
 .general__features {
   height: 174px;
@@ -144,6 +138,223 @@ width: 166px;
   line-height: 34px;
   text-align: center;
   color: var(--c-white-txt);
+}
+
+
+@media (max-width:1439px) {
+
+  .general__title:first-line {
+    font-size: 120px;
+    line-height: 120px;
+  }
+
+  .general__wrapper p {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 58px;
+  }
+
+
+  .general__wrapper {
+    width: 904px;
+    height: 583px;
+  }
+
+  .general__wrapper--overlay:before {
+    width: 453px;
+    height: 520px;
+    /*background-size: contain;*/
+    overflow: hidden;
+  }
+
+  .general__wrapper--overlay:before {
+    content: url("__img-general/main-banner-vr-453.png");
+    width: 453px;
+    height: 520px;
+  }
+
+  .general__arrow-down {
+    right: 418px;
+    bottom: 46px;
+    height: 67px;
+    width: 67px;
+  }
+
+  .general__order-btn {
+    width: 296px;
+    height: 64px;
+    font-size: 22px;
+    margin-left: 39px;
+  }
+
+  .general__features {
+    height: 145px;
+    width: 348px;
+    column-gap: 40px;
+    margin-bottom: 80px;
+  }
+
+  .general__first-block {
+    width: 168px;
+  }
+  .general__second-block {
+    width: 140px;
+  }
+  .first-block__text--special {
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 113px;
+  }
+
+  .first-block__text {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .second-block__text--special {
+    font-size: 60px;
+    line-height: 85px;
+  }
+  .second-block__text {
+    font-size: 26px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width:1023px) {
+  .general__title:first-line  {
+    font-size: 86px;
+    line-height: 86px;
+  }
+
+  .general__wrapper p {
+    font-size: 18px;
+    line-height: 24px;
+    padding-left: 70px;
+    margin-bottom: 65px;
+  }
+
+  .general__wrapper {
+    width: 688px;
+    height: 537px;
+  }
+
+  .general__wrapper--overlay:before {
+    content: url("__img-general/main-banner-vr-409.png");
+    width: 409px;
+    height: 479px;
+  }
+
+  .general__arrow-down {
+    display: none;
+  }
+
+  .general__order-btn {
+    width: 214px;
+    height: 46px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 0;
+  }
+
+  .general__features {
+    height: 92px;
+    width: 222px;
+    column-gap: 30px;
+    margin-bottom: 100px;
+  }
+
+  .general__first-block {
+    width: 103px;
+  }
+  .general__second-block {
+    width: 89px;
+  }
+  .first-block__text--special {
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 71px;
+  }
+
+  .first-block__text {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .second-block__text--special {
+    font-size: 40px;
+    line-height: 56px;
+  }
+  .second-block__text {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+@media (max-width:767px) {
+  .general__title:first-line  {
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .general__wrapper p {
+    font-size: 10px;
+    line-height: 14px;
+    padding-left: 20px;
+    margin-bottom: 16px;
+  }
+
+  .general__wrapper {
+    width: 208px;
+    height: 204px;
+  }
+
+  .general__wrapper--overlay:before {
+    content: url("__img-general/main-banner-vr-161.png");
+    width: 161px;
+    height: 179px;
+  }
+
+  .general__order-btn {
+    width: 117px;
+    height: 27px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .general__features {
+    height: 53px;
+    width: 139px;
+    column-gap: 20px;
+    margin-bottom: 30px;
+  }
+
+  .general__first-block {
+    width: 65px;
+  }
+  .general__second-block {
+    width: 54px;
+  }
+  .first-block__text--special {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 37px;
+  }
+
+  .first-block__text {
+    font-size: 10px;
+    line-height: 11px;
+  }
+
+  .second-block__text--special {
+    font-size: 22px;
+    line-height: 31px;
+  }
+  .second-block__text {
+    font-size: 10px;
+    line-height: 11px;
+  }
+
 }
 
 

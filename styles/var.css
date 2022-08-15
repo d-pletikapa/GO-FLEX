@@ -18,4 +18,35 @@
 
   --с-main-black-bg: #050404;
   --с-main-black-txt: #000000;
+
+  --container-padding: 0 130px;
+  --container-max-width: 1440px;
+  --section-max-width: 1180px;
+
+
+}
+
+
+@media (max-width:1439px) {
+  :root {
+    --container-padding: 0 60px;
+    --container-max-width: 1024px;
+    --section-max-width: 904px;
+  }
+}
+
+@media (max-width:1023px) {
+  :root {
+    --container-padding: 0 40px;
+    --container-max-width: 768px;
+    --section-max-width: 688px;
+  }
+}
+
+@media (max-width:767px) {
+  :root {
+    --container-padding: 0 20px;
+    --container-max-width: 320px;
+    --section-max-width: 280px;
+  }
 }
