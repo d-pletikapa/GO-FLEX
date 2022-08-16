@@ -34,10 +34,10 @@
   row-gap: 11px;
   min-height: 319px;
   width: 280px;
-  /* float: left; */
 }
 
 .reviews__item img {
+  flex-wrap: nowrap;
   justify-self: center;
   width: 280px;
   height: 280px;
@@ -82,22 +82,20 @@
 
   .reviews__item {
     min-height: 219px;
-    display: flex;
     column-gap: 12px;
   }
-  
+
   .reviews__item figure {
     row-gap: 21px;
     min-height: 219px;
     width: 224px;
-    float: left;
   }
-  
+
   .reviews__item img {
     width: 172px;
     height: 172px;
   }
-  
+
   .reviews__item figure:before{
     position: absolute;
     content: "";
@@ -111,9 +109,8 @@
     font-weight: 400;
     font-size: 18px;
   }
-  
+
   .reviews__item .reviews__comment {
-    display: inline-block;
     width: 515px;
     padding-top: 33px;
     font-size: 18px;
@@ -122,6 +119,9 @@
 }
 
 @media (max-width:1023px) {
+  .reviews__list {
+    justify-content: space-around;
+  }
   .reviews .container {
     padding-left: 40px;
     padding-right: 40px;
@@ -134,22 +134,20 @@
 
   .reviews__item {
     min-height: 190px;
-    display: flex;
     column-gap: 12px;
   }
-  
+
   .reviews__item figure {
     row-gap: 17px;
     min-height: 190px;
     width: 156px;
-    float: left;
   }
-  
+
   .reviews__item img {
     width: 153px;
     height: 153px;
   }
-  
+
   .reviews__item figure:before{
     position: absolute;
     content: "";
@@ -163,9 +161,8 @@
     font-weight: 400;
     font-size: 14px;
   }
-  
+
   .reviews__item .reviews__comment {
-    display: inline-block;
     width: 393px;
     padding-top: 30px;
     font-size: 16px;
@@ -180,8 +177,10 @@
   }
 
   .reviews__list {
+    max-width: 280px;
     flex-flow: column wrap;
-  }
+    row-gap: 20px;
+}
 
   .reviews__title {
     font-size: 14px;
@@ -190,34 +189,36 @@
   }
   .reviews__item {
     min-height: 115px;
-    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
     column-gap: 0;
   }
-  
+
   .reviews__item figure {
+    flex-flow: column wrap;
+    justify-content: normal;
+    align-items: center;
     row-gap: 9px;
     min-height: 115px;
-    width: 156px;
-    float: left;
+    width: 280px;
   }
-  
+
   .reviews__item img {
     width: 86px;
     height: 86px;
   }
-  
+
   .reviews__item figure:before{
     position: absolute;
     content: "";
     width: 86px;
     height: 86px;
   }
- 
+
 
   .reviews__item .reviews__comment {
-    display: inline-block;
     width: 280px;
-    padding-top: 16px;
+    padding-top: 0;
     font-size: 12px;
     line-height: 16px;
   }
