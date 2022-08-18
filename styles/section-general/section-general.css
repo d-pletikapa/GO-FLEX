@@ -143,6 +143,10 @@ width: 166px;
 
 @media (max-width:1439px) {
 
+  .general {
+    padding-bottom: 48px;
+  }
+
   .general__title:first-line {
     font-size: 120px;
     line-height: 120px;
@@ -222,6 +226,10 @@ width: 166px;
 }
 
 @media (max-width:1023px) {
+  .general {
+    padding-bottom: 50px;
+  }
+
   .general__title:first-line  {
     font-size: 86px;
     line-height: 86px;
@@ -292,6 +300,11 @@ width: 166px;
 }
 
 @media (max-width:767px) {
+
+  .general {
+    padding-bottom: 41px;
+  }
+
   .general__title:first-line  {
     font-size: 35px;
     line-height: 35px;
@@ -305,7 +318,6 @@ width: 166px;
   }
 
   .general__wrapper {
-    width: 208px;
     height: 204px;
   }
 
