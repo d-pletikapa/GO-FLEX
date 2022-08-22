@@ -1,6 +1,5 @@
 .devices .container {
   display: block;
-  /*justify-content: center;*/
 }
 
 .devices__flex-block--mobile {
@@ -110,8 +109,6 @@
     font-size: 20px;
     line-height: 28px;
   }
-
-
 }
 
 @media (max-width:1023px) {

@@ -79,12 +79,10 @@
 .booking__set-one {
   width: 280px;
 }
-.booking__set-two {
+.booking__set-two, .booking__set-three {
   width: 300px;
 }
-.booking__set-three {
-  width: 300px;
-}
+
 
 .booking__set-one input[type="radio"]{
   width: 27px;
@@ -166,10 +164,7 @@
   grid-area: booking__date-time;
 }
 
-.date-time__date input{
-  width: 134px;
-}
-.date-time__time input{
+.date-time__date input, .date-time__time input{
   width: 134px;
 }
 
@@ -347,19 +342,11 @@
     grid-template-rows: 74px 74px 50px;
   }
 
-  .booking__name {
+  .booking__name, .booking__name  input {
     width: 251px;
   }
 
-  .booking__name  input{
-    width: 251px;
-  }
-
-  .booking__tel{
-    width: 254px;
-  }
-
-  .booking__tel input{
+  .booking__tel, .booking__tel input{
     width: 254px;
   }
 
@@ -369,7 +356,6 @@
     font-size: 18px;
     line-height: 24px;
   }
-
 }
 
 @media (max-width:1023px) {
@@ -409,10 +395,10 @@
     row-gap: 48px;
     column-gap: 106px;
     grid-template-areas:
-  "booking__date-time  booking__count-ppl"
-  "booking__name--name booking__tel--tel"
-  "booking__name--sir-name booking__tel--e-mail"
-  ". booking__btn";
+    "booking__date-time  booking__count-ppl"
+    "booking__name--name booking__tel--tel"
+    "booking__name--sir-name booking__tel--e-mail"
+    ". booking__btn";
   }
 
   .booking__date-time{
@@ -425,7 +411,7 @@
     margin-bottom: calc(42px - 48px);
   }
 
-  .booking__name {
+  .booking__name, .booking__name  input {
     width: 280px;
   }
 
@@ -433,24 +419,14 @@
     align-self: flex-end;
     margin-bottom: calc(14px - 48px);
   }
+
   .booking__tel--tel {
     align-self: flex-end;
     margin-bottom: calc(14px - 48px);
   }
 
-  .booking__name  input{
-    width: 280px;
-  }
-
-  .booking__tel{
+  .booking__tel, .booking__tel input{
     width: 300px;
-  }
-
-  .booking__tel input{
-    width: 300px;
-  }
-
-  .booking__tel--e-mail {
   }
 
   .booking__btn {
@@ -459,7 +435,6 @@
     font-size: 22px;
     line-height: 28px;
   }
-
 }
 
 @media (max-width:767px) {
@@ -487,12 +462,10 @@
     row-gap: 14px;
   }
 
-  .booking__set-one{
+  .booking__set-one, .booking__set-two{
     margin-bottom: 25px;
   }
-  .booking__set-two {
-    margin-bottom: 25px;
-  }
+
   .booking__device-set .booking__device-list input {
     width: 30px;
     height: 30px;
@@ -509,13 +482,13 @@
     row-gap: 35px;
     column-gap: 0;
     grid-template-areas:
-  "booking__date-time"
-  "booking__count-ppl"
-  "booking__name--name"
-  "booking__tel--tel"
-  "booking__name--sir-name"
-  "booking__tel--e-mail"
-  "booking__btn";
+    "booking__date-time"
+    "booking__count-ppl"
+    "booking__name--name"
+    "booking__tel--tel"
+    "booking__name--sir-name"
+    "booking__tel--e-mail"
+    "booking__btn";
   }
 
   .booking__date-time{
@@ -543,15 +516,7 @@
     margin: 0;
   }
 
-  .booking__name  input{
-    width: 280px;
-  }
-
-  .booking__tel{
-    width: 280px;
-  }
-
-  .booking__tel input{
+  .booking__name  input, .booking__tel, .booking__tel input{
     width: 280px;
   }
 
@@ -571,5 +536,4 @@
     line-height: 26px;
     align-self: flex-end;
   }
-
 }

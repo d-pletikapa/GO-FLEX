@@ -231,7 +231,6 @@
 
   .contacts__wrapper p:nth-child(1) {
     margin-bottom: 40px;
-    /*white-space: pre-line;*/
   }
   .contacts__wrapper p:nth-child(1):before, .contacts__wrapper p:nth-child(2):before, .contacts__wrapper p:nth-child(3):before {
     margin-right: 13px;
@@ -359,7 +358,6 @@
   }
 
   .contacts__credentials p:last-of-type {
-    /*white-space: pre;*/
     text-align: center;
     width: 100%;
     row-gap: 5px;

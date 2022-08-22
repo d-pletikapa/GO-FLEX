@@ -29,11 +29,11 @@
 
 .reviews__item figure {
   display: flex;
-  justify-content: space-around;
-  flex-flow: row wrap;
-  row-gap: 11px;
   min-height: 319px;
   width: 280px;
+  row-gap: 11px;
+  justify-content: space-around;
+  flex-flow: row wrap;
 }
 
 .reviews__item img {
@@ -214,7 +214,6 @@
     width: 86px;
     height: 86px;
   }
-
 
   .reviews__item .reviews__comment {
     width: 280px;

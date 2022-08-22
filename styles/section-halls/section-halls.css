@@ -61,6 +61,7 @@
     line-height: 40px;
     margin-bottom: 36px;
   }
+
   .halls__item-block {
     width: 442px;
     min-height: 267px;
@@ -72,7 +73,6 @@
     top: 73px;
     right: 0;
   }
-
 }
 
 @media (max-width:1023px) {
@@ -93,8 +93,6 @@
     top: 62px;
     right: 0;
   }
-
-
 }
 
 @media (max-width:767px) {
