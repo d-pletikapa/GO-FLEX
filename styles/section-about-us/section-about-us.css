@@ -13,11 +13,7 @@
   display: inline-block;
   width: 600px;
   height: 596px;
-  background-image: url("__img-about-us/about-us-cover.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  grid-area: about-us__cover ;
+  grid-area: about-us__cover;
 }
 
 .about-us__subtitle {
@@ -42,14 +38,11 @@
   grid-area: about-us__quote;
 }
 
-.about-us__symbol, .about-us__quote--text-style:first-letter {
-  display: inline;
-  color: var(--с-purple-medium-txt);
+.about-us__quote:after , .about-us__quote:before {
   font-weight: 900;
   font-size: 44px;
   line-height: 50px;
   text-transform: uppercase;
-
 }
 
 .about-us__quote:before {
@@ -57,6 +50,14 @@
   position: relative;
   left: 0;
   content: '“ ';
+  color: var(--с-purple-medium-txt);
+}
+
+.about-us__quote:after {
+  display: inline;
+  position: relative;
+  left: 0;
+  content: ' ”';
   color: var(--с-purple-medium-txt);
 }
 
@@ -107,7 +108,7 @@
     max-width: 444px;
   }
 
-  .about-us__symbol, .about-us__quote--text-style:first-letter {
+  .about-us__quote:after , .about-us__quote:before {
     font-weight: 900;
     font-size: 30px;
     line-height: 36px;
@@ -162,7 +163,7 @@
     max-width: 100%;
   }
 
-  .about-us__symbol, .about-us__quote--text-style:first-letter {
+  .about-us__quote:after , .about-us__quote:before {
     font-weight: 900;
     font-size: 32px;
     line-height: 36px;
@@ -225,7 +226,7 @@
     margin-bottom: 9px;
   }
 
-  .about-us__symbol, .about-us__quote--text-style:first-letter {
+  .about-us__quote:after , .about-us__quote:before {
     font-weight: 900;
     font-size: 22px;
     line-height: 50px;

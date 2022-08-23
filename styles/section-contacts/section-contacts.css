@@ -132,28 +132,6 @@
   transition: color 0.2s ease-in;
 }
 
-
-.contacts__inst-icon {
-  background-image: url("__img-contacts/entypo-social_instagram-with-circle.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.contacts__vk-icon {
-  background-image: url("__img-contacts/entypo-social_vk-with-circle.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.contacts__fb-icon {
-  background-image: url("__img-contacts/entypo-social_fb-with-circle.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.contacts__tg-icon {
-  background-image: url("__img-contacts/entypo-social_tg-with-circle.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .contacts__inst-icon svg, .contacts__vk-icon svg, .contacts__fb-icon svg, .contacts__tg-icon svg {
   transition: color 0.2s ease, outline 0.2s ease-in-out;
 }
@@ -218,7 +196,7 @@
     margin-bottom: 26px;
   }
 
-  .contacts .contacts__socials-item, .contacts .contacts__socials-item a {
+  .contacts .contacts__socials-item, .contacts .contacts__socials-item a, .contacts__inst-icon svg, .contacts__vk-icon svg, .contacts__fb-icon svg, .contacts__tg-icon svg {
     width: 40px;
     height: 40px;
   }
@@ -302,7 +280,7 @@
   .contacts .contacts__socials-item {
     margin-right: 20px;
   }
-  .contacts .contacts__socials-item, .contacts .contacts__socials-item a {
+  .contacts .contacts__socials-item, .contacts .contacts__socials-item a, .contacts__inst-icon svg, .contacts__vk-icon svg, .contacts__fb-icon svg, .contacts__tg-icon svg {
     width: 30px;
     height: 30px;
   }

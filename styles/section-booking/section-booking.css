@@ -100,6 +100,12 @@
   color: var(--c-white-txt);
 }
 
+.booking__device-list label {
+ display: inline-flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
 .booking__device-list li:not(:last-child) {
   margin-bottom: 20px;
 }

@@ -105,9 +105,9 @@ width: 166px;
 
 .first-block__text--special {
   display: flex;
-  font-weight: 900;
   font-size: 100px;
   line-height: 141px;
+  font-weight: 900;
   font-variant: small-caps;
   color: var(--с-purple-bright-txt);
 }
@@ -200,7 +200,6 @@ width: 166px;
     width: 140px;
   }
   .first-block__text--special {
-    font-weight: 900;
     font-size: 80px;
     line-height: 113px;
   }
@@ -274,7 +273,6 @@ width: 166px;
     width: 89px;
   }
   .first-block__text--special {
-    font-weight: 900;
     font-size: 50px;
     line-height: 71px;
   }
@@ -303,6 +301,7 @@ width: 166px;
   .general__title:first-line  {
     font-size: 35px;
     line-height: 35px;
+    letter-spacing: -0.08em;
   }
 
   .general__wrapper p {
@@ -345,7 +344,6 @@ width: 166px;
   }
 
   .first-block__text--special {
-    font-weight: 900;
     font-size: 26px;
     line-height: 37px;
   }

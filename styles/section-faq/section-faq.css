@@ -70,6 +70,7 @@
   content: "";
   background-image: url('__img-faq/list_dark-blue-open-hover.svg');
   animation: faq-accordion 1.2s ease-out 1;
+  cursor: pointer;
 }
 
 .faq__item:nth-child(2n+1):active:after {
@@ -90,6 +91,7 @@
   content: "";
   background-image: url('__img-faq/list_white-open-hover.svg');
   animation: faq-accordion 1.2s ease-out 1;
+  cursor: pointer;
 }
 
 .faq__item:nth-child(2n):active:after {
