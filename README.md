@@ -144,3 +144,11 @@ git clone https://github.com/Quper87/git-lesson.git
 ```shell
 git commit -a -m 'сохраняет изменения отслеживаемых файлов и выполняет коммит'
 ```
+### проверить прикрепленный урл переприкрепить к другому репозиторию
+The last one is used when you need to change the remote repository. Let’s say you copied a repo from someone else and want to change the remote repository from the original owner’s to your own GitHub account. Follow the same process as git remote add origin, except use set-url instead to change the remote repo.
+
+```shell
+git remote -v
+git remote add origin <url>
+git remote set-url origin <url>
+```
