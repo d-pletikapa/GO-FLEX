@@ -15,7 +15,7 @@
   width: 680px;
   height: 274px;
   background-color: var(--c-white-bg);
-  background-image: url("./__img-contacts/map.jpg");
+  background-image: url("__img-contacts/map.jpg");
 }
 
 .contacts__title {

@@ -1,0 +1,138 @@
+.halls__item-block {
+  display: inline-block;
+  position: relative;
+  width: 380px;
+  min-height: 229px;
+}
+
+.halls__list {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+}
+
+.halls__item-block {
+  font-family: 'Arial', sans-serif;
+  list-style: none;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.halls__item-block span {
+  position: absolute;
+  white-space: pre-line;
+  width: 100%;
+  top: 78px;
+  right: 0;
+}
+
+.halls__link {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.halls__link:hover {
+  color: var(--с-purple-bright-a-hover);
+}
+
+.halls__title {
+  width: 100%;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.halls__80-s-vibes {
+  background: var(--с-main-black-bg) url("__img-halls/80-s-vibes.jpg") center center/cover no-repeat content-box padding-box;
+}
+
+.halls__star-wars {
+  background: var(--с-main-black-bg) url("__img-halls/star-wars.jpg") center center/cover no-repeat content-box padding-box;
+}
+
+.halls__wild-west {
+  background: var(--с-main-black-bg) url("__img-halls/wild-west.jpg") center center/cover no-repeat content-box padding-box;
+}
+
+.halls__neon-style {
+  background: var(--с-main-black-bg) url("__img-halls/neon-style.jpg") center center/cover no-repeat content-box padding-box;
+}
+
+@media (max-width:1439px) {
+  .halls__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 36px;
+  }
+
+  .halls__item-block {
+    width: 288px;
+    min-height: 172px;
+  }
+
+  .halls__item-block span {
+    top: 50px;
+    right: 0;
+  }
+}
+
+@media (max-width:1023px) {
+  .halls__list {
+     gap: 8px;
+  }
+
+  .halls__title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 35px;
+  }
+
+  .halls__item-block {
+    width: 224px;
+    min-height: 134px;
+  }
+
+  .halls__item-block span {
+    font-size: 20px;
+    line-height: 24px;
+    top: 43px;
+    right: 0;
+  }
+}
+
+@media (max-width:767px) {
+  .halls__title {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+
+  .halls__list {
+    gap: 5px;
+  }
+
+  .halls__item-block {
+    width: 280px;
+    min-height: 140px;
+  }
+
+  .halls__item-block span {
+    font-size: 20px;
+    line-height: 24px;
+    top: 46px;
+    right: 0;
+  }
+}
+
+
+
+
