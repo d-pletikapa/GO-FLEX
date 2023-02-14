@@ -9,9 +9,9 @@
 }
 
 .faq__item {
-  height: 87px;
+  min-height: 87px;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
   position: relative;
@@ -25,7 +25,19 @@
   padding: 30px 0 29px 70px;
 }
 
+.faq__text {
+  padding: 20px 0;
+}
 
+.faq__text-wrapper {
+  height: 0;
+  overflow: hidden;
+  transition: height .4s ease-in-out;
+}
+
+.faq--active .faq__text-wrapper {
+  height: auto;
+}
 
 .faq__item:nth-child(even) {
   background-color: var(--с-purple-dark-bg);
@@ -43,11 +55,13 @@
   margin: 0;
 }
 
-.faq__item:after {
+.faq__btn {
   display: block;
   width: 46px;
   height: 46px;
   margin-right: 90px;
+  background-color: transparent;
+  border: transparent;
 }
 
 @keyframes  faq-accordion {
@@ -59,45 +73,47 @@
   }
 }
 
-.faq__item:nth-child(2n+1):after {
-  content: "";
+.faq__item:nth-child(odd) .faq__btn {
   background-image: url('__img-faq/list_dark-blue-open.svg');
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.faq__item:nth-child(2n+1):hover:after {
-  content: "";
+.faq__item:nth-child(odd) .faq__btn:hover {
   background-image: url('__img-faq/list_dark-blue-open-hover.svg');
   animation: faq-accordion 1.2s ease-out 1;
   cursor: pointer;
 }
 
-.faq__item:nth-child(2n+1):active:after {
-  content: "";
+.faq__item:nth-child(odd) .faq__btn:active {
   background-image: url('__img-faq/list_dark-blue-open-active.svg');
   animation: faq-accordion 1.2s ease-in 1;
 }
 
-
-.faq__item:nth-child(2n):after {
-  content: "";
+.faq__item:nth-child(even) .faq__btn {
   background-image: url('__img-faq/list_white-open.svg');
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.faq__item:nth-child(2n):hover:after {
-  content: "";
+.faq__item:nth-child(even) .faq__btn:hover {
   background-image: url('__img-faq/list_white-open-hover.svg');
   animation: faq-accordion 1.2s ease-out 1;
   cursor: pointer;
 }
 
-.faq__item:nth-child(2n):active:after {
-  content: "";
+.faq__item:nth-child(even) .faq__btn:active {
   background-image: url('__img-faq/list_white-open-active.svg');
   animation: faq-accordion 1.2s ease-in 1;
+}
+
+.faq__item:nth-child(odd) .faq__btn--odd-active {
+  background-image: url('__img-faq/list_dark-blue-open-active.svg') !important;
+}
+
+.faq__item:nth-child(even) .faq__btn--even-active {
+  background-image: url('__img-faq/list_white-open-active.svg')
+  !important;
 }
 
 @media (max-width:1439px) {
@@ -107,7 +123,7 @@
     margin-bottom: 26px;
   }
   .faq__item {
-    height: 70px;
+    min-height: 70px;
     font-size: 24px;
     line-height: 28px;
     padding: 23px 0 23px 25px;
@@ -118,19 +134,23 @@
     color: var(--с-brown-dark-txt);
   }
 
-  .faq__item:nth-child(2n):after {
+  .faq__item:nth-child(even) .faq__btn {
     background-image: url('__img-faq/list_dark-blue-open.svg');
   }
 
-  .faq__item:nth-child(2n):hover:after {
+  .faq__item:nth-child(even) .faq__btn:hover {
     background-image: url('__img-faq/list_dark-blue-open-hover.svg');
   }
 
-  .faq__item:nth-child(2n):active:after {
+  .faq__item:nth-child(even) .faq__btn:active {
     background-image: url('__img-faq/list_dark-blue-open-active.svg');
   }
 
-  .faq__item:after {
+  .faq__item:nth-child(even) .faq__btn--even-active  {
+    background-image: url('__img-faq/list_dark-blue-open-active.svg') !important;
+  }
+
+  .faq__btn {
     top: 12px;
     margin-right: 20px;
   }
@@ -149,7 +169,7 @@
     padding: 23px 0 24px 54px;
   }
 
-  .faq__item:after {
+  .faq__btn {
     margin-right: 65px;
   }
 
@@ -166,13 +186,13 @@
     max-width: 205px
   }
   .faq__item {
-    height: 46px;
+    min-height: 46px;
     font-size: 12px;
     line-height: 16px;
     padding: 7px 0 7px 10px;
   }
 
-  .faq__item:after {
+  .faq__btn {
     display: block;
     width: 46px;
     height: 46px;
@@ -180,7 +200,7 @@
     top: 19px;
   }
 
-  .faq__item:after {
+  .faq__btn {
     width: 30px;
     height: 30px;
     margin-right: 13px;

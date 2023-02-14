@@ -1,6 +1,7 @@
 @import url('var.css');
 @import url('normalize.css');
 @import url('global-style.css');
+@import url('modal/modal.css');
 @import url('main/container/container.css');
 @import url('main/header/header.css');
 @import url('main/section-general/section-general.css');
