@@ -1,0 +1,125 @@
+.burger-window {
+    margin: 0 auto;
+}
+
+.burger-window--overlay {
+    display: flex;
+    width: 100%;
+    height: 0;
+    position: fixed;
+    z-index: 101;
+    left: -100%;
+    top: 107px;
+    /*left: 50%;*/
+    /*top: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+    background-color: #1B1A1B;
+
+}
+
+.burger-window--visible {
+    display: none;
+}
+
+.burger-window__block {
+    position: absolute;
+    float: left;
+    left: 0;
+    top: 0;
+    /*left: 50%;*/
+    /*top: 50%;*/
+    /*transform: translate(-50%, -85%);*/
+    height: auto;
+    width: 100%;
+    background: #1B1A1B;
+    padding: 30px;
+}
+
+.burger-window-main--wrapper {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 0 0 0;
+    margin-bottom: 30px;
+}
+
+.burger__list {
+    display: flex;
+    flex-flow: column wrap;
+    row-gap: 40px;
+}
+
+.burger__item {
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+.burger__item a {
+    transition: color 0.2s ease-in;
+}
+
+.burger__item a:hover {
+    color:var(--с-purple-bright-a-hover);;
+}
+
+.burger__item a:focus {
+    outline: 2px solid var(--с-purple-bright-border-outline);;
+    border-radius: 5px;
+}
+
+.burger__call-back-order {
+    width: 229px;
+    height: 45px;
+    border: 3px solid var(--с-purple-bright-border-outline);;
+    border-radius: 8px;
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: var(--c-white-txt);
+}
+.burger-window__footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.burger__call-back-order {
+    transition: background-color 0.2s ease, border 0.2s ease-out;
+}
+.burger__call-back-order:hover {
+    background-color: var(--с-purple-medium-bg);
+    border: 3px solid var(--с-purple-medium-border-outline);;
+}
+.burger__call-back-order:active {
+    background-color: #640AA3;
+    border: none;
+    outline: none;
+}
+.burger__call-back-order:focus {
+    background-color: var(--с-purple-medium-bg);
+    border: none;
+    outline: none;
+}
+
+.burger__call-back-order--visible {
+    display: none;
+}
+
+
+@media (max-width: 767px) {
+    .burger__call-back-order--visible {
+        display: block;
+    }
+    .burger-window--overlay {
+        top: 70px;
+    }
+    .burger-window-main--wrapper {
+        padding: 6px 0 0 0;
+        margin-bottom: 38px;
+    }
+}
