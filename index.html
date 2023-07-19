@@ -7,11 +7,13 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="styles/style.css">
+  <script defer src="https://api-maps.yandex.ru/v3/?apikey=1874a34b-45bf-44df-acbf-12258953baad&lang=ru_RU"></script>
+  <!-- <script defer src="https://api-maps.yandex.ru/2.1/?apikey=1874a34b-45bf-44df-acbf-12258953baad&lang=ru_RU"></script> -->
+  <!-- <script defer src="./js/modules/ymaps3.js"></script> -->
   <script type="module" src="./js/index.js"></script>
   <title>GAME OVER - Main page</title>
 </head>
 <body>
-
 <header class="header">
   <div class="container">
   <a class="header__logo" href="#" title="Logo"></a>
@@ -207,25 +209,27 @@
 
             <ul class="booking__date-time">
               <li><label class="date-time__date">
-                <input type="date" name="date" required="required" placeholder="Дата" title="Дата">
+                <span>Дата</span>
+                <input type="date" name="date" required="required" placeholder="Дата" title="Дата" id="date-input">
               </label>
               </li>
 
               <li>
                 <label class="date-time__time">
-                  <input type="time" name="time" required="required" placeholder="Время" title="Время">
+                  <span>Время</span>
+                  <input type="time" name="time" required="required" placeholder="Время" title="Время" id="time-input">
                 </label>
               </li>
             </ul>
 
           <ul class="booking__name booking__name--name">
-            <li><label><span>Имя</span><input type="text" name="name" required="required">
+            <li><label><span>Имя</span><input type="text" name="name" required="required" placeholder="Иван" id="name-input">
             </label></li>
           </ul>
 
           <ul class="booking__tel booking__tel--tel">
             <li>
-              <label><span>Телефон</span><input type="tel" name="telephone" required="required">
+              <label><span>Телефон</span><input type="tel" name="telephone" placeholder="+7 (___) ___-__-__" required="required" id="tel-input">
               </label>
             </li>
           </ul>
@@ -233,13 +237,14 @@
           <ul class="booking__count-ppl">
             <li>
               <label class="date-time__quantity">
-                <input type="number" name="person-quantity" required="required" placeholder="Сколько человек">
+                <span>Количество человек</span>
+                <input type="number" name="person-quantity" required="required" placeholder="1" id="count-input">
               </label>
             </li>
           </ul>
 
             <ul class="booking__name booking__name--sir-name">
-              <li><label><span>Фамилия</span><input type="text" name="surname" required="required">
+              <li><label><span>Фамилия</span><input type="text" name="surname" required="required" placeholder="Сидоров" id="surname-input">
               </label></li>
             </ul>
 
@@ -247,12 +252,12 @@
 
           <ul class="booking__tel booking__tel--e-mail">
               <li>
-                <label><span>E-mail</span><input type="email" name="mail" required="required" placeholder="">
+                <label><span>E-mail</span><input type="email" name="mail" required="required" placeholder="example@example.com" id="email-input">
               </label>
               </li>
             </ul>
 
-            <button class="booking__btn" form="book">Забронировать
+            <button class="booking__btn" type="submit" form="book">Забронировать
             </button>
 
 <!--           <div> -->
@@ -441,7 +446,7 @@
         </li>
       </ul>
         </div>
-        <div class="contacts__map"></div>
+        <div class="contacts__map" id="map"></div>
       </div>
       <div id="contacts__credentials" class="contacts__credentials">
         <p>© Game Over, 2022</p>

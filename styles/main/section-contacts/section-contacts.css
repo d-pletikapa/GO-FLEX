@@ -14,8 +14,8 @@
 .contacts__map {
   width: 680px;
   height: 274px;
-  background-color: var(--c-white-bg);
-  background-image: url("__img-contacts/map.jpg");
+  /* background-color: var(--c-white-bg);
+  background-image: url("__img-contacts/map.jpg"); */
 }
 
 .contacts__title {
@@ -218,8 +218,8 @@
 
   .contacts__map {
     width: 542px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-repeat: no-repeat;
+    background-size: cover; */
   }
   .contacts {
     padding-top: 10px;

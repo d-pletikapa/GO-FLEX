@@ -7,6 +7,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./styles/80s-vibes/style.css">
+    <!-- <script defer src="/node_modules/swiper/swiper-bundle.min.mjs"></script> -->
+    <script type="module" src="./js/modules/swiper.js"></script>
     <title>80`s Vibes</title>
 </head>
 <body>
@@ -59,15 +61,52 @@
         </div>
     </section>
 
-    <section id="about-room" class="about-room">
+    <section>
         <div class="container">
-            <h2 class="about-room__title">Что есть в комнате?</h2>
-            <div class="about-room__cover"></div>
-                <p class="about-room__subtitle about-room__subtitle--1">В комнате 80-х есть игровые автоматы, магнитофоны, виниловые пластинки и мини кинотеатр.</p>
-            <p class="about-room__subtitle about-room__subtitle--2">Также вы можете выбрать игровую приставку, настольные игры, VR и караоке.</p>
+    <!-- Slider main container -->
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <section id="" class="about-room">
+                    <div class="container">
+                        <h2 class="about-room__title">Что есть в комнате 1?</h2>
+                        <div class="about-room__cover"></div>
+                        <p class="about-room__subtitle about-room__subtitle--1">В комнате 80-х есть игровые автоматы, магнитофоны, виниловые пластинки и мини кинотеатр.</p>
+                        <p class="about-room__subtitle about-room__subtitle--2">Также вы можете выбрать игровую приставку, настольные игры, VR и караоке.</p>
+                    </div>
+                </section>    
+            </div>
+            <div class="swiper-slide">
+                <section id="" class="about-room">
+                    <div class="container">
+                        <h2 class="about-room__title">Что есть в комнате 2?</h2>
+                        <div class="about-room__cover"></div>
+                        <p class="about-room__subtitle about-room__subtitle--1">В комнате 80-х есть игровые автоматы, магнитофоны, виниловые пластинки и мини кинотеатр.</p>
+                        <p class="about-room__subtitle about-room__subtitle--2">Также вы можете выбрать игровую приставку, настольные игры, VR и караоке.</p>
+                    </div>
+                </section>    
+            </div>
+            <div class="swiper-slide">
+                <section id="" class="about-room">
+                    <div class="container">
+                        <h2 class="about-room__title">Что есть в комнате 3?</h2>
+                        <div class="about-room__cover"></div>
+                        <p class="about-room__subtitle about-room__subtitle--1">В комнате 80-х есть игровые автоматы, магнитофоны, виниловые пластинки и мини кинотеатр.</p>
+                        <p class="about-room__subtitle about-room__subtitle--2">Также вы можете выбрать игровую приставку, настольные игры, VR и караоке.</p>
+                    </div>
+                </section>    
+            </div>
         </div>
-    </section>
 
+    </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+</div>
+    </section>
     <section id="other-halls" class="other-halls">
         <div class="container">
             <h2 class="halls__title">Другие комнаты</h2>
