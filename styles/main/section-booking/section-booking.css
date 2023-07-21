@@ -140,7 +140,6 @@
 
 .booking__count-ppl {
   grid-area: booking__count-ppl;
-  align-self: flex-end;
 }
 
 .booking__name--sir-name {
@@ -158,6 +157,7 @@
 
 .booking__personal-data input {
   height: 52px;
+  padding: 12px 20px;
 }
 
 
@@ -166,7 +166,6 @@
   flex-flow: row wrap;
   column-gap: 32px;
   width: 300px;
-  align-content: flex-end;
   grid-area: booking__date-time;
 }
 
@@ -174,8 +173,16 @@
   width: 134px;
 }
 
+.date-time__date span, .date-time__time span  {
+  margin-bottom: 6px;
+}
+
 .date-time__quantity input{
   width: 300px;
+}
+
+.date-time__quantity span {
+  margin-bottom: 6px;
 }
 
 .booking__name {
