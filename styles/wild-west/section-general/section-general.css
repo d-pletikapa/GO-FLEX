@@ -3,7 +3,7 @@
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  width: 226px;
+  width: 260px;
   height: 28px;
   transition: color 0.2s ease-in;
   font-weight: 700;
@@ -75,7 +75,7 @@
     background-size: auto, 402px;
   }
   .general__back-link {
-    width: 178px;
+    width: 197px;
     font-size: 16px;
     line-height: 28px;
   }
@@ -100,7 +100,7 @@
     width: 16px;
   }
   .general__back-link {
-    width: 124px;
+    width: 143px;
     font-size: 12px;
     line-height: 16px;
   }

@@ -1,16 +1,17 @@
 .general__back-link {
   display: flex;
   flex-flow: row wrap;
+  column-gap: 10px;
   justify-content: space-between;
   align-items: center;
-  width: 226px;
+  width: 260px;
   height: 28px;
   transition: color 0.2s ease-in;
+  color: var(--c-white-txt);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   font-weight: 700;
   font-size: 22px;
   line-height: 28px;
-  color: var(--c-white-txt);
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .general__back-link:hover {
@@ -75,7 +76,7 @@
     background-size: auto, 402px;
   }
   .general__back-link {
-    width: 178px;
+    width: 197px;
     font-size: 16px;
     line-height: 28px;
   }
@@ -100,7 +101,7 @@
     width: 16px;
   }
   .general__back-link {
-    width: 124px;
+    width: 143px;
     font-size: 12px;
     line-height: 16px;
   }
