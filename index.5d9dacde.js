@@ -5389,7 +5389,8 @@ async function main() {
         location: LOCATION
     });
     // Добавление слоев на карту
-    map.addChild(scheme = new YMapDefaultSchemeLayer());
+    const scheme = new YMapDefaultSchemeLayer();
+    map.addChild(scheme);
     map.addChild(new YMapDefaultFeaturesLayer());
     // Добавление элементов управления на карту
     map.addChild(new YMapControls({
