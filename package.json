@@ -2,7 +2,6 @@
   "name": "go-flex",
   "version": "1.0.0",
   "description": "```shell\r git config --list\r ```",
-  "main": "index.js",
   "scripts": {
     "dev": "parcel index.html",
     "build": "parcel build index.html"
@@ -17,5 +16,6 @@
     "parcel": "^2.9.3"
   },
   "devDependencies": {
+
   }
 }
