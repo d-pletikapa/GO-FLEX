@@ -1,7 +1,7 @@
 .general__back-link {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  column-gap: 10px;
   align-items: center;
   width: 260px;
   height: 28px;

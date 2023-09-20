@@ -2,7 +2,6 @@
   display: flex;
   flex-flow: row wrap;
   column-gap: 10px;
-  justify-content: space-between;
   align-items: center;
   width: 260px;
   height: 28px;
