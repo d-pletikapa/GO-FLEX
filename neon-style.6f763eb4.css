@@ -725,7 +725,7 @@ button.swiper-pagination-bullet {
 
 .swiper-scrollbar {
   border-radius: var(--swiper-scrollbar-border-radius, 10px);
-  -ms-touch-action: none;
+  touch-action: none;
   background: var(--swiper-scrollbar-bg-color, #0000001a);
   position: relative;
 }
