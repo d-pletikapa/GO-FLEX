@@ -660,6 +660,7 @@
 }
 
 .devices__flex-block {
+  background-repeat: no-repeat;
   flex-flow: wrap;
   align-items: flex-start;
   min-width: 380px;

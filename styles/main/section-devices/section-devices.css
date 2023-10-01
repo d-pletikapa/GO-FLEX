@@ -24,6 +24,7 @@
   flex-flow:row wrap;
   align-items:flex-start;
   min-width: 380px;
+  background-repeat: no-repeat;
   height: 228px;
   transition: transform 0.4s ease-in-out;
 }
